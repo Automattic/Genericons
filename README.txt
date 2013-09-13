@@ -42,6 +42,8 @@ From then on, you can create an icon like this:
 
 This will output a comment icon before every element with the class "my-icon". The "content: '\f101';" part of this CSS is easily copied from the helper tool at http://genericons.com/
 
+You can also use the bundled example.css if you'd rather insert the icons using HTML tags.
+
 
 _  _ ____ ___ ____ ____ 
 |\ | |  |  |  |___ [__  
