@@ -30,6 +30,8 @@ To use it, place the font folder in your stylesheet directory and paste this in 
 
 }
 
+Note: the above only works if you don't use a CDN. If you do, or don't know what that is, you should use the syntax that's embedded in genericons.css.
+
 From then on, you can create an icon like this:
 
 .my-icon:before {
@@ -55,3 +57,17 @@ Genericons-Regular.otf found in the root directory of this zip has not been web-
 Note that Genericons has been designed for a 16x16 pixel grid. That means it'll look sharp at font-size: 16px exactly. It'll also be crisp at multiples thereof, such as 32px or 64px. It'll also look reasonably crisp at in-between font sizes such as 24px or 48px, but not quite as crisp as 16 or 32. Please don't set the font-size to 17px, though, that'll just look terrible.
 
 Also note the CSS property "-webkit-font-smoothing: antialiased". That makes the icons look great in WebKit browsers. Please see http://noscope.com/2012/font-smoothing for more info.
+
+
+____ _  _ ____ _  _ ____ ____ _    ____ ____ 
+|    |__| |__| |\ | | __ |___ |    |  | | __ 
+|___ |  | |  | | \| |__] |___ |___ |__| |__] 
+                                            
+V2.06:
+Included Base64 encoded version. This is necessary for Genericons to work with CDNs in Firefox. Firefox blocks fonts linked from a different domain. A CDN (typically s.example.com) usually puts the font on a subdomain, and is hence blocked in Firefox.
+
+V2.05:
+Added a bunch of new icons, including upload to cloud, download to cloud, many more.
+
+V2:
+Initial public release
