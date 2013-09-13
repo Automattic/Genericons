@@ -2,7 +2,7 @@
 <html dir="ltr" lang="en">
 <head>
 <title>Genericons</title>
-<link rel="stylesheet" href="example.css">
+<link rel="stylesheet" href="genericons.css">
 <style type="text/css">
 body {
 	font-family: sans-serif;
@@ -24,11 +24,106 @@ body {
 .icons:hover div {
 	background: #f7f7f7;
 }
+.code {
+        display: block;
+        font: 14px/1.5 monospace;
+        width: 740px;
+        white-space: pre;
+        border: 1px solid #ccc;
+        padding: 10px;
+        color: #777;
+        overflow: auto;
+}
+.my-icon:before {
+        content: '\2605';
+        display: inline-block;
+        -webkit-font-smoothing: antialiased;
+        font: normal 32px/1 'Genericons';
+        vertical-align: middle;
+}
+/* For the Examples */
+.my-checklist {
+	list-style-type: none;
+	text-indent: -16px;
+}
+.my-checklist li:before {
+	padding-right: 16px;
+        content: '\f418';
+        display: inline-block;
+        -webkit-font-smoothing: antialiased;
+        font: normal 16px/1 'Genericons';
+        vertical-align: text-top;
+}
+.my-blockquote {
+	background: #eee;
+	border-left: 32px solid #ddd;
+	padding: 10px;
+}
+.my-blockquote:before {
+	margin-left: -42px;
+	padding-right: 10px;
+        content: '\f106';
+        display: inline-block;
+        -webkit-font-smoothing: antialiased;
+        font: normal 32px/20px 'Genericons';
+        vertical-align: bottom;
+}
+.my-button {
+	font-family: Helvetica, sans-serif;
+	font-size: 14px;
+	background: #e05d22; /* Old browsers */
+	background: -webkit-linear-gradient(top, #e05d22 0%, #d94412 100%); /* Chrome10+,Safari5.1+ */
+	background: -moz-linear-gradient(   top, #e05d22 0%, #d94412 100%); /* FF3.6+ */
+	background: -ms-linear-gradient(    top, #e05d22 0%, #d94412 100%); /* IE10+ */
+	background: -o-linear-gradient(     top, #e05d22 0%, #d94412 100%); /* Opera 11.10+ */
+	background: linear-gradient(  to bottom, #e05d22 0%, #d94412 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e05d22', endColorstr='#d94412', GradientType=0); /* IE6-9 */
+	display: inline-block;
+	padding: 10px 16px 4px 16px;
+	color: #fff;
+	text-decoration: none;
+	border: none;
+	border-bottom: 3px solid #b93207;
+	border-radius: 2px;
+}
+.my-button:hover,
+.my-button:focus {
+	background: #ed6a31; /* Old browsers */
+	background: -webkit-linear-gradient(top, #ed6a31 0%, #e55627 100%); /* Chrome10+,Safari5.1+ */
+	background: -moz-linear-gradient(   top, #ed6a31 0%, #e55627 100%); /* FF3.6+ */
+	background: -ms-linear-gradient(    top, #ed6a31 0%, #e55627 100%); /* IE10+ */
+	background: -o-linear-gradient(     top, #ed6a31 0%, #e55627 100%); /* Opera 11.10+ */
+	background: linear-gradient(  to bottom, #ed6a31 0%, #e55627 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ed6a31', endColorstr='#e55627', GradientType=0); /* IE6-9 */
+	outline: none;
+}
+.my-button:active {
+	background: #d94412; /* Old browsers */
+	background: -webkit-linear-gradient(top, #d94412 0%, #e05d22 100%); /* Chrome10+,Safari5.1+ */
+	background: -moz-linear-gradient(   top, #d94412 0%, #e05d22 100%); /* FF3.6+ */
+	background: -ms-linear-gradient(    top, #d94412 0%, #e05d22 100%); /* IE10+ */
+	background: -o-linear-gradient(     top, #d94412 0%, #e05d22 100%); /* Opera 11.10+ */
+	background: linear-gradient(  to bottom, #d94412 0%, #e05d22 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#d94412', endColorstr='#e05d22', GradientType=0); /* IE6-9 */
+	border: none;
+	border-top: 3px solid #b93207;
+	padding: 6px 16px 7px 16px;
+}
 </style>
 </head>
 <body>
 
 <div class="section">
+
+	<h1>Genericons Usage</h1>
+
+	<p>Copy the <strong>font</strong> folder and the <strong>genericons.css</strong> file together into your project. Link the CSS in your HTML:</p>
+
+	<p><code>&lt;link href="path/to/genericons.css" rel="stylesheet"&gt;</code></p>
+
+	<p>Drop in the following HTML with the name of the icon you want to display:</p>
+
+	<p><code>&lt;div alt="f100" class="genericon genericon-standard"&gt;&lt;/div&gt;</code></p>
 
 	<div class="icons">
 	
@@ -103,11 +198,204 @@ body {
 		<div alt="f502" class="genericon genericon-downarrow"></div>
 		<div alt="f503" class="genericon genericon-leftarrow"></div>
 
-		
 	</div>
 
-</div>
+	<p>If you wan to insert an icon manually using the <code>:before</code> selector, you can setup CSS rules like the following example. <strong>Make sure to set the size to a multiple of 16px</strong> or the icons could end up looking fuzzy:</p>
 
+<p><textarea class="code" style="min-height: 150px;" onclick="select();">.my-icon:before {
+        content: '\2605';
+        display: inline-block;
+        -webkit-font-smoothing: antialiased;
+        font: normal 32px/1 'Genericons';
+        vertical-align: middle;
+}</textarea></p>
+
+	<p>Add a matching class to your HTML:</p>
+
+	<p><code>&lt;div class="my-icon"&gt;You're a Star!&lt;/div&gt;</code></p>
+
+	<p>Here's the result: <span class="my-icon">You're a Star!</span></p>
+
+	<h2>Examples</h2>
+
+	<p>Turn every icon a <span style="color: #fa8072;">Salmon</span> color:</p>
+
+<p><textarea class="code" style="min-height: 70px" onclick="select();">
+.genericon {
+	color: #fa8072;
+}</textarea></p>
+
+	<p>Or turn the stars <span style="color: #ffd700;">Gold</span>:</p>
+
+<p><textarea class="code" style="min-height: 70px" onclick="select();">
+.genericon-star {
+	color: #fa8072;
+}</textarea></p>
+
+	<p>Use icons for bulleted lists:</p>
+
+	<ul class="my-checklist">
+		<li>One</li>
+		<li>Two</li>
+		<li>Three</li>
+		<li>Four</li>
+	</ul>
+
+<p><textarea class="code" style="min-height: 130px" onclick="select();">
+<ul class="my-checklist">
+	<li>One</li>
+	<li>Two</li>
+	<li>Three</li>
+	<li>Four</li>
+</ul></textarea></p>
+
+<p><textarea class="code" style="min-height: 260px;" onclick="select();">
+.my-checklist {
+	list-style-type: none;
+	text-indent: -16px;
+}
+.my-checklist li:before {
+	padding-right: 16px;
+        content: '\f418';
+        display: inline-block;
+        -webkit-font-smoothing: antialiased;
+        font: normal 16px/1 'Genericons';
+        vertical-align: text-top;
+}</textarea></p>
+
+	<p>Use icons to style blockquotes:</p>
+
+	<blockquote class="my-blockquote">Sometimes I've believed as many as six impossible things before breakfast. &mdash;<em>Lewis Carroll</em></blockquote>
+	<blockquote class="my-blockquote">`Twas brillig, and the slithy toves Did gyre and gimble in the wabe: All mimsy were the borogoves, And the mome raths outgrabe. "Beware the Jabberwock, my son!  The jaws that bite, the claws that catch!  Beware the Jubjub bird, and shun The frumious Bandersnatch!"</blockquote>
+
+<p><textarea class="code" style="min-height: 40px;" onclick="select();"><blockquote class="my-blockquote">Sometimes I've believed as many as six impossible things before breakfast. &mdash;<em>Lewis Carroll</em></blockquote></textarea></p>
+
+<p><textarea class="code" style="min-height: 300px;" onclick="select();">
+.my-blockquote {
+	background: #eee;
+	border-left: 32px solid #ddd;
+	padding: 10px;
+}
+.my-blockquote:before {
+	margin-left: -42px;
+	padding-right: 10px;
+        content: '\f106';
+        display: inline-block;
+        -webkit-font-smoothing: antialiased;
+        font: normal 32px/20px 'Genericons';
+        vertical-align: bottom;
+} </textarea></p>
+
+	<p>Use icons to style blockquotes:</p>
+
+	<a class="my-button" href="javascript:void()"><i class="genericon genericon-show"></i> View</a>
+	<a class="my-button" href="javascript:void()"><i class="genericon genericon-audio"></i> Listen</a>
+
+<p><textarea class="code" style="min-height: 40px;" onclick="select();"><a class="my-button" href="#"><i class="genericon genericon-show"></i> View</a>
+<a class="my-button" href="#"><i class="genericon genericon-audio"></i> Listen</a></textarea></p>
+
+<p><textarea class="code" style="min-height: 300px;" onclick="select();">
+.my-button {
+	font-family: Helvetica, sans-serif;
+	background: #e05d22; /* Old browsers */
+	background: -webkit-linear-gradient(top, #e05d22 0%, #d94412 100%); /* Chrome10+,Safari5.1+ */
+	background: -moz-linear-gradient(   top, #e05d22 0%, #d94412 100%); /* FF3.6+ */
+	background: -ms-linear-gradient(    top, #e05d22 0%, #d94412 100%); /* IE10+ */
+	background: -o-linear-gradient(     top, #e05d22 0%, #d94412 100%); /* Opera 11.10+ */
+	background: linear-gradient(  to bottom, #e05d22 0%, #d94412 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e05d22', endColorstr='#d94412', GradientType=0); /* IE6-9 */
+	display: inline-block;
+	padding: 10px 16px 6px 16px;
+	color: #fff;
+	text-decoration: none;
+	border: none;
+	border-bottom: 3px solid #b93207;
+	border-radius: 2px;
+}
+
+.my-button:hover,
+.my-button:focus {
+	background: #ed6a31; /* Old browsers */
+	background: -webkit-linear-gradient(top, #ed6a31 0%, #e55627 100%); /* Chrome10+,Safari5.1+ */
+	background: -moz-linear-gradient(   top, #ed6a31 0%, #e55627 100%); /* FF3.6+ */
+	background: -ms-linear-gradient(    top, #ed6a31 0%, #e55627 100%); /* IE10+ */
+	background: -o-linear-gradient(     top, #ed6a31 0%, #e55627 100%); /* Opera 11.10+ */
+	background: linear-gradient(  to bottom, #ed6a31 0%, #e55627 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ed6a31', endColorstr='#e55627', GradientType=0); /* IE6-9 */
+	outline: none;
+}
+
+.my-button:active {
+	background: #d94412; /* Old browsers */
+	background: -webkit-linear-gradient(top, #d94412 0%, #e05d22 100%); /* Chrome10+,Safari5.1+ */
+	background: -moz-linear-gradient(   top, #d94412 0%, #e05d22 100%); /* FF3.6+ */
+	background: -ms-linear-gradient(    top, #d94412 0%, #e05d22 100%); /* IE10+ */
+	background: -o-linear-gradient(     top, #d94412 0%, #e05d22 100%); /* Opera 11.10+ */
+	background: linear-gradient(  to bottom, #d94412 0%, #e05d22 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#d94412', endColorstr='#e05d22', GradientType=0); /* IE6-9 */
+	border: none;
+	border-top: 3px solid #b93207;
+	padding: 6px 16px 10px 16px;
+}</textarea>/</p>
+
+	<h2>CSS Preprocessors</h2>
+
+	<p>Preprocessing extensions such as Sass (SCSS Syntax) or LESS</a> can make it easier to manage CSS for a lot of things at once using things like variables and mixins.</p>
+
+	<p>This example will seup the basic genericon rules and sets a color you can use for all icons using Sass:</p>
+
+<p><textarea class="code" style="min-height: 360px;" onclick="select();">$icon-color: "#fa8072";
+
+.genericon {
+        color: $icon-color;
+}
+
+@mixin genericon-rules {
+        display: inline-block;
+        -webkit-font-smoothing: antialiased;
+        font: normal 16px/1 'Genericons';
+        vertical-align: middle;
+}
+
+.my-icon:before {
+        content: '\2605';
+        @include genericon-rules;
+}</textarea></p>
+
+	<p>Here is a similar example for LESS:</p>
+
+<p><textarea class="code" style="min-height: 360px;" onclick="select();">@icon-color: "#fa8072";
+
+.genericon {
+        color: @icon-color;
+}
+
+.genericon-rules {
+        display: inline-block;
+        -webkit-font-smoothing: antialiased;
+        font: normal 16px/1 'Genericons';
+        vertical-align: middle;
+}
+
+.my-icon:before {
+        content: '\2605';
+        .genericon-rules;
+}</textarea></p>
+
+	<h2>Fallback images for IE7 and below</h2>
+
+	<p>Genericons <strong>does not come with fallback icons by default</strong> -- therefore you have to create them yourself. If you are using HTML similar to this example:
+
+	<p><code>&lt;span class="genericon genericon-warning"&gt;&lt;/span&gt;</code></p>
+
+	<p>You can use the asterisk hack to serve a different icon to IE7 once you have saved the fallback icons to your project:</p>
+
+<textarea class="code" style="min-height: 85px;" onclick="select();">.genericon-warning {
+        *background: url(fallback-icon.png) no-repeat center center;
+        *text-indent: 100%;
+}</textarea>
+
+</div>
 
 </body>
 </html>
