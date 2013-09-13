@@ -81,6 +81,7 @@
 .genericon-vimeo:before { content: '\f212'; }
 .genericon-youtube:before { content: '\f213'; }
 .genericon-tumblr:before { content: '\f214'; }
+.genericon-instagram:before { content: '\f215'; }
 
 /* Meta icons */
 .genericon-comment:before { content: '\f300'; }
@@ -118,6 +119,27 @@
 .genericon-minimize:before { content: '\f421'; }
 .genericon-maximize:before { content: '\f422'; }
 .genericon-404:before { content: '\f423'; }
+.genericon-spam:before { content: '\f424'; }
+.genericon-summary:before { content: '\f425'; }
+.genericon-cloud:before { content: '\f426'; }
+.genericon-key:before { content: '\f427'; }
+.genericon-dot:before { content: '\f428'; }
+.genericon-next:before { content: '\f429'; }
+.genericon-previous:before { content: '\f430'; }
+.genericon-expand:before { content: '\f431'; }
+.genericon-collapse:before { content: '\f432'; }
+.genericon-dropdown:before { content: '\f433'; }
+.genericon-dropdown-left:before { content: '\f434'; }
+.genericon-top:before { content: '\f435'; }
+.genericon-draggable:before { content: '\f436'; }
+.genericon-phone:before { content: '\f437'; }
+.genericon-send-to-phone:before { content: '\f438'; }
+.genericon-plugin:before { content: '\f439'; }
+.genericon-cloud-download:before { content: '\f440'; }
+.genericon-cloud-upload:before { content: '\f441'; }
+.genericon-external:before { content: '\f442'; }
+.genericon-document:before { content: '\f443'; }
+.genericon-book:before { content: '\f444'; }
 
 /* Generic shapes */
 .genericon-uparrow:before { content: '\f500'; }
