@@ -85,6 +85,50 @@
 	content: '\f109';
 }
 
+/* Social icons */
+.genericon-github:before {
+	content: '\f200';
+}
+.genericon-dribbble:before {
+	content: '\f201';
+}
+.genericon-twitter:before {
+	content: '\f202';
+}
+.genericon-facebook:before {
+	content: '\f203';
+}
+.genericon-facebook-alt:before {
+	content: '\f204';
+}
+.genericon-wordpress:before {
+	content: '\f205';
+}
+.genericon-googleplus:before {
+	content: '\f206';
+}
+.genericon-linkedin:before {
+	content: '\f207';
+}
+.genericon-linkedin-alt:before {
+	content: '\f208';
+}
+.genericon-pinterest:before {
+	content: '\f209';
+}
+.genericon-pinterest-alt:before {
+	content: '\f210';
+}
+.genericon-flickr:before {
+	content: '\f211';
+}
+.genericon-vimeo:before {
+	content: '\f212';
+}
+.genericon-youtube:before {
+	content: '\f213';
+}
+
 /* Meta icons */
 .genericon-comment:before {
 	content: '\f300';
