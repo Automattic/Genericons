@@ -62,7 +62,10 @@ Also note the CSS property "-webkit-font-smoothing: antialiased". That makes the
 ____ _  _ ____ _  _ ____ ____ _    ____ ____ 
 |    |__| |__| |\ | | __ |___ |    |  | | __ 
 |___ |  | |  | | \| |__] |___ |___ |__| |__] 
-                                            
+
+V2.09:
+Updated Facebook icon to new version. Updated Instagram logo to use new one-color version. Updated Google+ icon to use same radius as Instagram and Facebook. Added a bunch of new icons, cog, unapprove, cart, media player buttons, tablet, send to tablet.                                            
+
 V2.06:
 Included Base64 encoded version. This is necessary for Genericons to work with CDNs in Firefox. Firefox blocks fonts linked from a different domain. A CDN (typically s.example.com) usually puts the font on a subdomain, and is hence blocked in Firefox.
 
