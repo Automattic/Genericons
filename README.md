@@ -57,6 +57,10 @@ Genericons is now generated using a commandline tool called FontCustom. This mak
 * New: Website.
 * New: Ellipsis.
 * New: Foursquare.
+* New: X-post.
+* New: Sitemap.
+* New: Hierarchy.
+* New: Paintbrush.
 * Updated: Show and Hide icons were updated for clarity.
 
 ** 3.0.3 **
