@@ -26,28 +26,28 @@ You can also use the bundled example.css if you'd rather insert the icons using 
 
 ### Notes
 
-** Photoshop mockups **
+**Photoshop mockups**
 
 The `Genericons.ttf` file found in the `font` directory can be placed in your system fonts folder and used Photoshop or other graphics apps if you like.
 
 If you're using Genericons in your Photoshop mockups, please remember to delete the old version of the font from Font Book, and grab the new one from the zip file. This also affects using it in your webdesigns: if you have an old version of the font installed locally, that's the font that'll be used in your website as well, so if you're missing icons, check for old versions of the font on your system.
 
-** Pixel grid **
+**Pixel grid**
 
 Genericons has been designed for a 16x16px grid. That means it'll look sharp at font-size: 16px exactly. It'll also be crisp at multiples thereof, such as 32px or 64px. It'll look reasonably crisp at in-between font sizes such as 24px or 48px, but not quite as crisp as 16 or 32. Please don't set the font-size to 17px, though, that'll just look terrible blurry.
 
-** Antialiasing **
+**Antialiasing**
 
 If you keep intact the `-webkit-font-smoothing: antialiased;` and `-moz-osx-font-smoothing: grayscale;` CSS properties. That'll make the icons look their best possible, in Firefox and WebKit based browsers.
 
-** Updates **
+**Updates**
 
 We don't often update icons, but do very carefully when we get good feedback suggesting improvements. Please be mindful if you upgrade, and check that the updated icons behave as you intended.
 
 
 ### Changelog
 
-** 3.1 **
+**3.1**
 
 Genericons is now generated using a commandline tool called FontCustom. This makes it far easier to add new icons to the font, but the switch means the download zip now has a different layout, fonts have different filenames, there's now no .otf font included (but the .ttf should suffice), and the font now has slightly different metrics. I've taken great care to ensure this new version should work as a drop-in replacement, but please be mindful and test carefully if you choose to upgrade.
 
@@ -63,7 +63,7 @@ Genericons is now generated using a commandline tool called FontCustom. This mak
 * New: Paintbrush.
 * Updated: Show and Hide icons were updated for clarity.
 
-** 3.0.3 **
+**3.0.3**
 
 Bunch of updates mostly.
 
@@ -73,7 +73,7 @@ Bunch of updates mostly.
 * Nicer "Share" icon.
 * Bigger default Linkedin icon.
 
-** 3.0.2 **
+**3.0.2**
 
 A slew of new stuff and updates.
 
@@ -88,7 +88,7 @@ A slew of new stuff and updates.
 * The "pin" icon has been updated for style and clarity.
 * The Twitter icon has been scaled down to fit with the other social icons.
 
-** 3.0.1 **
+**3.0.1**
 
 Mostly maintenance. 
 
@@ -97,7 +97,7 @@ Mostly maintenance.
 * Replaced tabs with spaces in the helper CSS.
 * Changed the Genericons.com copy/paste tool to serve span's instead of div's for casual icon insertion. It's being converted to "inline-block" anyway.
 
-** 3.0 **
+**3.0**
 
 Mainly maintenance and a few new icons.
 
@@ -107,18 +107,18 @@ Mainly maintenance and a few new icons.
 * Genericons.com now has a mini release blog.
 * The CSS has prettier formatting, props Konstantin Obenland.
 
-** 2.09 **
+**2.09**
 
 Updated Facebook icon to new version. Updated Instagram logo to use new one-color version. Updated Google+ icon to use same radius as Instagram and Facebook. Added a bunch of new icons, cog, unapprove, cart, media player buttons, tablet, send to tablet.                                            
 
-** 2.06 **
+**2.06**
 
 Included Base64 encoded version. This is necessary for Genericons to work with CDNs in Firefox. Firefox blocks fonts linked from a different domain. A CDN (typically s.example.com) usually puts the font on a subdomain, and is hence blocked in Firefox.
 
-** 2.05 **
+**2.05**
 
 Added a bunch of new icons, including upload to cloud, download to cloud, many more.
 
-** 2.0 **
+**2.0**
 
 Initial public release
