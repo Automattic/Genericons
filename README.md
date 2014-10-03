@@ -40,12 +40,40 @@ Genericons has been designed for a 16x16px grid. That means it'll look sharp at 
 
 If you keep intact the `-webkit-font-smoothing: antialiased;` and `-moz-osx-font-smoothing: grayscale;` CSS properties. That'll make the icons look their best possible, in Firefox and WebKit based browsers.
 
+**optimizeLegibility**
+
+Note: On Android browsers with version 4.2, 4.3, and probably later, Genericons will simply not show up if you're using the CSS property "text-rendering" set to "optimizeLegibility.
+
 **Updates**
 
 We don't often update icons, but do very carefully when we get good feedback suggesting improvements. Please be mindful if you upgrade, and check that the updated icons behave as you intended.
 
 
 ### Changelog
+
+**3.2**
+
+A number of new icons and a couple of quick updates. 
+
+* New: Activity
+* New: HTML anchor
+* New: Bug
+* New: Download
+* New: Handset
+* New: Microphone
+* New: Minus
+* New: Plus
+* New: Move
+* New: Rating stars, empty, half, full
+* New: Shuffle
+* New: video camera
+* New: Spotify
+* New: Twitch
+* Update: Fixed geometry in Edit icon
+* Update: Updated Foursquare icon
+
+Twitch and Spotify mark the last social icons that will be added to Genericons.
+Future social icons will have to happen in a separate font. 
 
 **3.1**
 
