@@ -71,6 +71,7 @@ A number of new icons and a couple of quick updates.
 * New: Twitch
 * Update: Fixed geometry in Edit icon
 * Update: Updated Foursquare icon
+* IE8 bugfix, slipstreamed into this. 
 
 Twitch and Spotify mark the last social icons that will be added to Genericons.
 Future social icons will have to happen in a separate font. 
