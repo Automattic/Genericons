@@ -1,0 +1,57 @@
+# --------------------------------------------------------------------------- #
+# Project Info
+#   Defaults shown. Learn more about these options by running
+#   `fontcustom help` or visiting <http://fontcustom.com>.
+# --------------------------------------------------------------------------- #
+
+font_name: Genericons
+
+# default font metrics
+#font_design_size: 16
+#font_em: 512
+#font_ascent: 448
+#font_descent: 64
+
+# upscaled
+font_design_size: 16
+font_em: 2048
+font_ascent: 2048
+font_descent: 0
+
+css_selector: .genericon-{{glyph}}
+preprocessor_path: ""
+autowidth: false
+no_hash: true
+force: true
+debug: false
+quiet: false
+
+
+# --------------------------------------------------------------------------- #
+# Input Paths
+# --------------------------------------------------------------------------- #
+
+input:
+  vectors: svg
+  templates: fontcustom-templates
+
+
+# --------------------------------------------------------------------------- #
+# Output Paths
+# --------------------------------------------------------------------------- #
+
+output:
+  fonts: fontcustom-webfont/
+  css: fontcustom-webfont/
+
+
+# --------------------------------------------------------------------------- #
+# Templates
+#   Included in Font Custom: preview, css, scss, scss-rails
+#   Custom templates should be saved in the INPUT[:templates] directory and
+#   referenced by their baserame.
+# --------------------------------------------------------------------------- #
+
+templates:
+ - example.html
+ - genericons.css

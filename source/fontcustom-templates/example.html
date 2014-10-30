@@ -1,0 +1,428 @@
+<% scale = %w|12 14 16 18 21 24 36 48 60 72| %><!DOCTYPE html>
+<html>
+<head>
+<title><%= font_name %></title>
+<link rel="stylesheet" href="genericons.css">
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<style type="text/css">
+/**
+ * Example page CSS
+ */
+
+body {
+	font-family: sans-serif;
+	line-height: 1.5;
+	margin: 0;
+	color: #2f2d2c;
+	background: #fff;
+	font-size: 11pt;
+}
+
+a {
+	color: #2f2d2c;
+}
+
+h4 {
+	margin-top: 40px;
+}
+
+#iconlist {
+	clear: both;
+	margin-bottom: 20px;
+}
+
+#iconlist div {
+	padding: 10px;
+	overflow: hidden;
+	white-space: nowrap;
+	font-size: 32px;
+	line-height: 1;
+	position: relative;
+	width: 32px;
+	height: 32px;
+}
+
+#iconlist div:before {
+	margin-right: 20px;
+}
+
+#iconlist div:hover {
+	cursor: pointer;
+	color: #e4c05c;
+}
+
+#primary {
+	background: #e4c05c;
+	overflow: hidden;
+}
+
+#content {
+	position: relative;
+	color: #fff;
+	max-width: 980px;
+	padding: 0 10px;
+	margin: 0 auto;
+}
+
+#icons {
+	background: #fbfbfb;
+}
+
+#icons #iconlist {
+	max-width: 980px;
+	box-sizing: border-box;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	padding: 20px 0;
+	margin: 0 auto;
+}
+
+#glyph {
+	float: left;
+	width: 50%;
+	box-sizing: border-box;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	-ms-box-sizing:border-box;
+	padding: 20px 0;
+}
+
+#glyph .info {
+	float: right;
+	width: 180px;
+	padding: 36px 0 0 0;
+}
+
+#glyph .info a {
+	color: #2f2d2c;
+	display: block;
+	padding: 8px 0 8px 15px;
+}
+
+#glyph .info strong {
+	font-weight: normal;
+	display: block;
+	padding: 8px 0;
+}
+
+#glyph .genericon {
+	font-size: 256px;
+	width: 256px;
+	height: 256px;
+	overflow: visible;
+	float: left;
+}
+
+.description {
+	margin-top: 50px;
+	width: 48%;
+	float: right;
+	padding-left: 40px;
+	margin-left: 2%;
+	box-sizing: border-box;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	-ms-box-sizing:border-box;
+	background-size: 4px 4px;
+}
+
+#primary h2 {
+	color: white;
+	margin: 0 auto;
+	padding: 22px 0 0 20px;
+	max-width: 980px;
+	font-size: 2em;
+}
+
+#primary h2 span {
+	display: block;
+	font-weight: normal;
+	font-size: 12pt;
+}
+
+#footer {
+	clear: both;
+	max-width: 980px;
+	margin: 80px auto;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: .1em;
+	font-size: 7pt;
+	color: #ddd;
+}
+
+#footer a {
+	color: #ccc;
+	display: inline-block;
+	width: 150px;
+	overflow: hidden;
+	text-indent: 100%;
+	position: relative;
+	top: 2px;
+	opacity: .3;
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNi4wLjQsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB3aWR0aD0iMTUwcHgiIGhlaWdodD0iMTRweCIgdmlld0JveD0iMTAgMCAxNTAgMTQiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMTAgMCAxNTAgMTQiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPGc+DQoJPHBhdGggZmlsbD0iIzQ0NDQ0NCIgZD0iTTY1LjQzOCwxMi41Yy0zLjYyNiwwLTUuOTc2LTIuNjEyLTUuOTc2LTUuMzMxVjYuODMxYzAtMi43NjUsMi4zNTEtNS4zMyw1Ljk3Ni01LjMzDQoJCWMzLjY0MSwwLDUuOTksMi41NjUsNS45OSw1LjMzdjAuMzM5QzcxLjQyOCw5Ljg4OCw2OS4wNzksMTIuNSw2NS40MzgsMTIuNXogTTY5LjQ5Miw2Ljg2MWMwLTEuOTgtMS40NDQtMy43NDgtNC4wNTUtMy43NDgNCgkJcy00LjA0LDEuNzY4LTQuMDQsMy43NDh2MC4yNDZjMCwxLjk4MSwxLjQyOSwzLjc3OSw0LjA0LDMuNzc5czQuMDU1LTEuNzk4LDQuMDU1LTMuNzc5VjYuODYxeiIvPg0KCTxwYXRoIGZpbGw9IiM0NDQ0NDQiIGQ9Ik0yNC40OTgsMTIuMWwtMS4zNTItMi41MzVoLTYuMDA3TDE1LjgzNCwxMi4xaC0yLjAyOGw1LjUzMS0xMC4yM2gxLjU5N2w1LjYyMiwxMC4yM0gyNC40OThMMjQuNDk4LDEyLjF6DQoJCSBNMjAuMDksMy44NjZsLTIuMjI4LDQuMzAxaDQuNTMxTDIwLjA5LDMuODY2eiIvPg0KCTxwYXRoIGZpbGw9IiM0NDQ0NDQiIGQ9Ik0zNS4yODEsMTIuNWMtMy42NzEsMC01LjM3Ni0xLjk5Ni01LjM3Ni00LjY1NFYxLjg3aDEuOTA0djYuMDA2YzAsMS44OTEsMS4yNDUsMy4wMTMsMy42MSwzLjAxMw0KCQljMi40MjgsMCwzLjQyNi0xLjEyMiwzLjQyNi0zLjAxM1YxLjg3aDEuOTJ2NS45NzZDNDAuNzY3LDEwLjM4LDM5LjEzOCwxMi41LDM1LjI4MSwxMi41eiIvPg0KCTxwYXRoIGZpbGw9IiM0NDQ0NDQiIGQ9Ik01MS40NTgsMy40NjdWMTIuMWgtMS45MTlWMy40NjdoLTQuNDcxVjEuODdoMTAuODZ2MS41OThMNTEuNDU4LDMuNDY3TDUxLjQ1OCwzLjQ2N3oiLz4NCgk8cGF0aCBmaWxsPSIjNDQ0NDQ0IiBkPSJNODguNTQzLDEyLjFWNC4wMDRsLTAuNTA5LDAuODkxTDgzLjc0OSwxMi4xaC0wLjkzN2wtNC4yNC03LjIwNWwtMC41MDYtMC44OTFWMTIuMWgtMS44NzVWMS44N2gyLjY1OA0KCQlsNC4wNCw3LjAyMWwwLjQ3NiwwLjg2bDAuNDc3LTAuODZsMy45OTQtNy4wMjFoMi42MjdWMTIuMUg4OC41NDNMODguNTQzLDEyLjF6Ii8+DQoJPHBhdGggZmlsbD0iIzQ0NDQ0NCIgZD0iTTEwNC45NzgsMTIuMWwtMS4zNTItMi41MzVoLTYuMDA4TDk2LjMxMywxMi4xaC0yLjAyOGw1LjUzMS0xMC4yMzFoMS41OTlsNS42MjIsMTAuMjMxSDEwNC45Nzh6DQoJCSBNMTAwLjU3LDMuODY2bC0yLjIyOCw0LjMwMWg0LjUyOUwxMDAuNTcsMy44NjZ6Ii8+DQoJPHBhdGggZmlsbD0iIzQ0NDQ0NCIgZD0iTTExNC43NzgsMy40NjdWMTIuMWgtMS45MlYzLjQ2N2gtNC40N1YxLjg3aDEwLjg2djEuNTk4TDExNC43NzgsMy40NjdMMTE0Ljc3OCwzLjQ2N3oiLz4NCgk8cGF0aCBmaWxsPSIjNDQ0NDQ0IiBkPSJNMTI4Ljg2NiwzLjQ2N1YxMi4xaC0xLjkxOVYzLjQ2N2gtNC40NzJWMS44N2gxMC44NnYxLjU5OEwxMjguODY2LDMuNDY3TDEyOC44NjYsMy40Njd6Ii8+DQoJPHBhdGggZmlsbD0iIzQ0NDQ0NCIgZD0iTTEzOC4wNjcsMTIuMVYyLjgzN2MwLjc2OSwwLDEuMDc2LTAuNDE1LDEuMDc2LTAuOTY4aDAuODE0VjEyLjFIMTM4LjA2N0wxMzguMDY3LDEyLjF6Ii8+DQoJPHBhdGggZmlsbD0iIzQ0NDQ0NCIgZD0iTTE1NC45OTYsNC43NTdjLTAuOTIxLTAuODQ1LTIuMjc0LTEuNjQ0LTQuMTAyLTEuNjQ0Yy0yLjczMywwLTQuMjcsMS44NzUtNC4yNywzLjgyNXYwLjINCgkJYzAsMS45MzcsMS41NTEsMy43NDgsNC40MDgsMy43NDhjMS43MDUsMCwzLjExOC0wLjgxNCw0LjAwOS0xLjY0NGwxLjE1MiwxLjIxNWMtMS4xMjEsMS4xMDctMy4wMjYsMi4wNDMtNS4yODUsMi4wNDMNCgkJYy0zLjg3LDAtNi4yMjMtMi41MjEtNi4yMjMtNS4yODRWNi44NzdjMC0yLjc2NiwyLjU2Ni01LjM3Nyw2LjMxNC01LjM3N2MyLjE2NywwLDQuMTM2LDAuOTA2LDUuMTk0LDIuMDQzTDE1NC45OTYsNC43NTd6Ii8+DQoJPHBhdGggZmlsbD0iIzQ0NDQ0NCIgZD0iTTY2LjcwMiw1LjA2YzAuMzQ3LDAuMjI0LDAuNDQ0LDAuNjg3LDAuMjE5LDEuMDM3TDY1LjE2OSw4LjgxYy0wLjIyNSwwLjM0Ny0wLjY4OCwwLjQ0OC0xLjAzMywwLjIyOWwwLDANCgkJQzYzLjc5LDguODEyLDYzLjY5Miw4LjM1MSw2My45MTcsOGwxLjc1MS0yLjcxM0M2NS44OTMsNC45MzgsNjYuMzU1LDQuODM3LDY2LjcwMiw1LjA2TDY2LjcwMiw1LjA2eiIvPg0KPC9nPg0KPC9zdmc+DQo=');
+}
+
+#footer a:hover {
+	opacity: 1;
+}
+
+pre, code {
+	font: 14px/1.5 monospace;
+}
+
+.code {
+	display: block;
+	font: 14px/1.5 monospace;
+	width: 600px;
+	white-space: pre;
+	border: 1px solid #ccc;
+	padding: 10px;
+	overflow: auto;
+	min-height: 110px;
+}
+
+#iconlist .new, #iconlist .update {
+	position: relative;
+}
+
+#iconlist .new:after, #iconlist .update:after {
+	color: #e4c05c;
+	display: block;
+	content: "NEW";
+	font: bold 8px/1 sans-serif;
+	position: absolute;
+	top: 0px;
+	text-align: center;
+	z-index: 10;
+	width: 100%;
+}
+
+#iconlist .update:after {
+	content: "UPDATE";
+	left: -1px;
+}
+
+body.searching #iconlist span.update:after, body.searching #iconlist span.new:after {
+	display: none;
+}
+
+#search {
+	border: 0;
+	border-radius: 2px;
+	position: absolute;
+	right: 20px;
+	font: 11pt sans-serif;
+	padding: 10px;
+	top: 20px;
+	background: rgba(255,255,255,.8);
+}
+
+#search:focus {
+	background: #fff;
+	outline: none;
+}
+
+.genericon-404 {
+	display: none !important; /* This is an easter egg */
+}
+
+.genericon:after {
+	content: attr(alt);
+	display: block;
+	font-size: 9px;
+	color: #999;
+	text-align: center;
+}
+
+.hideUACs.genericon:after {
+	content: none;
+}
+
+
+@media only screen and ( max-width: 900px ) {
+
+	#glyph {
+		float: none;
+		width: 100%;
+	}
+	
+	#glyph .info {
+		width: 30%;
+	}
+	#glyph .genericon {
+		width: 70%;
+	}
+
+	.description {
+		clear: both;
+		width: 100%;
+		background: none;
+		padding-left: 0;
+		float: none;
+	}
+
+}
+</style>
+<script type="text/javascript">
+/**
+ * Example page JS
+ */
+
+function copyToClipboard ( text, copyMode ) {
+	if ( copyMode == "css" ) {
+		window.prompt( "Copy this, then paste in your CSS :before selector.", text );
+	} else if ( copyMode == "html" ) {
+		window.prompt( "Copy this, then paste in your HTML.", text );
+	} else {
+		window.prompt( "Copy this, then paste in your Photoshop textfield.", text );
+	}
+}
+
+function pickRandomIcon() {
+	var divs = jQuery("#iconlist div").get().sort(function(){
+			return Math.round(Math.random())-0.5;
+		}).slice(0,1);
+
+	attr = jQuery(divs).attr('alt');
+	cssclass = jQuery(divs).attr('class');
+	displayGlyph( attr, cssclass );
+
+}
+
+function displayGlyph( attr, cssclass ) {
+
+	// set permalink
+	var permalink = cssclass.split(' genericon-')[1];
+	window.location.hash = permalink;
+
+	// css copy string
+	csstext = "content: \'\\" + attr + "';";
+
+	// html copy string
+	htmltext = '<span class="' + cssclass + '"></span>';
+
+	// glyph copy string
+	glyphtemp = "&#x" + attr + ";";
+	jQuery('#temp').html( glyphtemp );
+	glyphtext = jQuery('#temp').text();
+
+	// final output
+	output = '<div class="' + cssclass + '"></div>'
+	+ '<div class="info">'
+		+ '<strong>&larr; ' + cssclass.split( ' ' )[1] + '</strong>'
+		+ '<a href="javascript:copyToClipboard(csstext, \'css\')">Copy CSS</a>'
+		+ '<a href="javascript:copyToClipboard(htmltext, \'html\')">Copy HTML</a>'
+		+ '<a href="javascript:copyToClipboard(glyphtext)">Copy Glyph</a>'
+	+ '</div>';
+
+	jQuery( '#glyph' ).html( output );
+
+}
+
+function sortUnicode ( a, b ) {
+	var numberA = jQuery(a).attr('alt').replace('f', '');
+	var numberB = jQuery(b).attr('alt').replace('f', '');
+	var contentA =parseInt( numberA, 16 );
+	var contentB =parseInt( numberB, 16 );
+	return (contentA < contentB) ? -1 : (contentA > contentB) ? 1 : 0;
+}
+
+jQuery(document).ready(function() {
+
+	// pick random icon if no permalink, otherwise go to permalink
+	if ( window.location.hash ) {
+		permalink = "genericon-" + window.location.hash.split('#')[1];
+		attr = jQuery( '.' + permalink ).attr( 'alt' );
+		cssclass = jQuery( '.' + permalink ).attr('class');
+		displayGlyph( attr, cssclass );
+	} else {
+		pickRandomIcon();
+	}
+
+	jQuery( '#iconlist div' ).click(function() {
+
+		attr = jQuery( this ).attr( 'alt' );
+		cssclass = jQuery( this ).attr( 'class' );
+
+		displayGlyph( attr, cssclass );
+
+	});
+
+	var $rows = jQuery('#iconlist div');
+	jQuery('#search').keyup(function() {
+	
+		// remove update text when using search
+		jQuery('body').addClass('searching');
+	
+	    var val = jQuery.trim(jQuery(this).val()).replace(/ +/g, ' ').toLowerCase();
+	
+	    $rows.show().filter(function() {
+	        var text = jQuery(this).text().replace(/\s+/g, ' ').toLowerCase();
+	        return !~text.indexOf(val);
+	    }).hide();
+	});
+	
+	jQuery('input#search').focus();
+
+	// sort based on number
+	jQuery('#iconlist div').sort( sortUnicode ).appendTo('#iconlist');
+
+});
+
+function toggleUACs() {
+	jQuery('.genericon').toggleClass('hideUACs');
+}
+</script>
+</head>
+
+<body>
+
+<div id="main">
+
+	<div id="primary">
+		<div id="content">
+
+			<h2><%= font_name %> <span>&mdash; A free, GPL, flexible icon font for blogs!</span></h2>
+
+			<input placeholder="Filter..." name="search" id="search" type="text" value="" maxlength="150" />
+
+			<div id="glyph">
+			</div>
+			
+			<div class="description">
+				<p><%= font_name %> are vector icons embedded in a webfont designed to be clean and simple keeping with a generic aesthetic. Use for instant HiDPI or to easily change colors on the fly.</p>
+			</div>
+			
+		</div>
+	</div>
+
+	<div id="icons">
+		<div id="iconlist">
+		
+			<!-- note, the text inside the HTML elements is purely for the seach -->
+			<% @glyphs.each do |name, value|
+			selector = @options[:css_selector].sub('{{glyph}}', name.to_s) %>
+			<div alt="<%= value[:codepoint].to_s(16) %>" class="genericon <%= selector[1..-1] %>" title="<%= selector[1..-1] %>"><%= selector[11..100] %></div>
+			<% end %>
+
+		</div>
+		
+		<div id="temp" style="display: none;"></div>
+		
+	</div>
+
+	<div id="footer">
+
+		<p>An <a href="http://automattic.com" rel="nofollow">Automattic</a> Portrayal</p>
+		<p>No designers were harmed in the making of this icon font.</p>
+		
+
+	</div>
+
+</div>
+
+</body>
+</html>
