@@ -7,7 +7,7 @@ Use genericons for instant HiDPI, to change icon colors on the fly, or even with
 
 ## Usage
 
-To use it, place the `font` folder in your stylesheet directory and enqueue the genericons.css file. Now you can create an icon like this:
+To use it, place the `genericons` folder in your stylesheet directory and enqueue the genericons.css file. Now you can create an icon like this:
 
 ```
 .my-icon:before {
