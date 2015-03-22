@@ -53,7 +53,7 @@ Fontello is very easy to use. Just drop the SVG files of the icons you want onto
 
 **Photoshop mockups**
 
-The `Genericons.ttf` file found in the `font` directory can be placed in your system fonts folder and used Photoshop or other graphics apps if you like.
+The `Genericons.ttf` file can be placed in your system fonts folder and used Photoshop or other graphics apps if you like.
 
 If you're using Genericons in your Photoshop mockups, please remember to delete the old version of the font from Font Book, and grab the new one from the zip file. This also affects using it in your webdesigns: if you have an old version of the font installed locally, that's the font that'll be used in your website as well, so if you're missing icons, check for old versions of the font on your system.
 
