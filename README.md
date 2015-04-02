@@ -73,6 +73,24 @@ Note: On Android browsers with version 4.2, 4.3, and probably later, Genericons 
 
 We don't often update icons, but do very carefully when we get good feedback suggesting improvements. Please be mindful if you upgrade, and check that the updated icons behave as you intended.
 
+**Base64 encoding**
+
+By default, Genericons ships with a stylesheet that includes a base64 encoded version of the font. This is to sidestep issues with cross-origin requests for fonts, that happen when a stylesheet loads a font that's stored on a different domain or subdomain. This is very common when using caching plugins.
+
+Base64 encoding comes with a 25% filesize overhead compared to just loading the WOFF file directly. If you know that you won't be loading fonts across domains, or have the ability to edit your server config files to allow it, you can get slightly faster performance by loading Genericons without the base64 encoding. Simply edit `genericons.css` and edit the `@font-face` declaration to match this:
+
+```
+@font-face {
+	font-family: 'Genericons';
+		src: url('Genericons.woff') format('woff'),
+		url('Genericons.ttf') format('truetype'),
+		url('Genericons.svg#genericonsregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+```
+
+
 
 ## Changelog
 
