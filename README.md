@@ -94,6 +94,10 @@ Base64 encoding comes with a 25% filesize overhead compared to just loading the 
 
 ## Changelog
 
+**3.3.1**
+
+Security Hardening: Remove Genericons example.html file. Please visit genericons.com instead.
+
 **3.3**
 
 The Open Source release.
