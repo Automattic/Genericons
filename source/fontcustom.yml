@@ -22,6 +22,7 @@ css_selector: .genericon-{{glyph}}
 preprocessor_path: ""
 autowidth: false
 no_hash: true
+base64: true
 force: true
 debug: false
 quiet: false
