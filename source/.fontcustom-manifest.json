@@ -1,7 +1,7 @@
 {
   "checksum": {
-    "previous": "2b30d11ca4679ce0ea8e1c535ad57fe907a4da51ed9ef884d9f5175a7b443679",
-    "current": "2b30d11ca4679ce0ea8e1c535ad57fe907a4da51ed9ef884d9f5175a7b443679"
+    "previous": "2858430f6832ec74c67c045291e222c57e0dca564c0884d53827b7a37316ad9b",
+    "current": "2858430f6832ec74c67c045291e222c57e0dca564c0884d53827b7a37316ad9b"
   },
   "fonts": [
     "fontcustom-webfont//Genericons.ttf",
@@ -205,10 +205,6 @@
     "googleplus": {
       "codepoint": 61958,
       "source": "svg/googleplus.svg"
-    },
-    "googleplus-alt": {
-      "codepoint": 61976,
-      "source": "svg/googleplus-alt.svg"
     },
     "handset": {
       "codepoint": 62732,
@@ -623,12 +619,12 @@
     "preprocessor_path": "",
     "quiet": false,
     "templates": [
-      "example.html",
-      "genericons.css"
+      "genericons.css",
+      "example.html"
     ]
   },
   "templates": [
-    "fontcustom-webfont/example.html",
-    "fontcustom-webfont/genericons.css"
+    "fontcustom-webfont/genericons.css",
+    "fontcustom-webfont/example.html"
   ]
 }
