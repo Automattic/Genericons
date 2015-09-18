@@ -1,7 +1,7 @@
 {
   "checksum": {
-    "previous": "2858430f6832ec74c67c045291e222c57e0dca564c0884d53827b7a37316ad9b",
-    "current": "2858430f6832ec74c67c045291e222c57e0dca564c0884d53827b7a37316ad9b"
+    "previous": "2b2f1f01fce6abe84ddf7fef9cef182d18a911a93eb64391b8b8bb58df89532d",
+    "current": "2b2f1f01fce6abe84ddf7fef9cef182d18a911a93eb64391b8b8bb58df89532d"
   },
   "fonts": [
     "fontcustom-webfont//Genericons.ttf",
@@ -597,6 +597,7 @@
   },
   "options": {
     "autowidth": false,
+    "base64": true,
     "config": "fontcustom.yml",
     "css_selector": ".genericon-{{glyph}}",
     "debug": false,
@@ -619,12 +620,10 @@
     "preprocessor_path": "",
     "quiet": false,
     "templates": [
-      "genericons.css",
-      "example.html"
+      "genericons.css"
     ]
   },
   "templates": [
-    "fontcustom-webfont/genericons.css",
-    "fontcustom-webfont/example.html"
+    "fontcustom-webfont/genericons.css"
   ]
 }
