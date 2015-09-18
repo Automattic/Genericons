@@ -1,7 +1,7 @@
 {
   "checksum": {
-    "previous": "2b2f1f01fce6abe84ddf7fef9cef182d18a911a93eb64391b8b8bb58df89532d",
-    "current": "2b2f1f01fce6abe84ddf7fef9cef182d18a911a93eb64391b8b8bb58df89532d"
+    "previous": "af0ad60ebc5f2dd7d9ab08df7d355f676313dd64b2d335fea2ab72a5a12f80d4",
+    "current": "af0ad60ebc5f2dd7d9ab08df7d355f676313dd64b2d335fea2ab72a5a12f80d4"
   },
   "fonts": [
     "fontcustom-webfont//Genericons.ttf",
@@ -205,6 +205,10 @@
     "googleplus": {
       "codepoint": 61958,
       "source": "svg/googleplus.svg"
+    },
+    "googleplus-alt": {
+      "codepoint": 61976,
+      "source": "svg/googleplus-alt.svg"
     },
     "handset": {
       "codepoint": 62732,
