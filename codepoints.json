@@ -102,5 +102,12 @@
     "website": 62581,
     "week": 62214,
     "xpost": 62724,
-    "zoom": 62466
+    "zoom": 62466,
+    "downarrow": 61706,
+    "leftarrow": 61707,
+    "rating-empty": 61708,
+    "rating-full": 61709,
+    "rating-half": 61710,
+    "rightarrow": 61711,
+    "uparrow": 61712
 }
