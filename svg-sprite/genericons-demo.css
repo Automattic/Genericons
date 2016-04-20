@@ -5,7 +5,7 @@
 html {
 	background: #fff;
 	font: 10pt/1 sans-serif;
-	color: #999;
+	color: #000;
 }
 
 a:link, a:visited {
@@ -36,8 +36,8 @@ body {
 }
 
 #icons div {
-	width: 48px;
-	height: 64px;
+	width: 32px;
+	height: 48px;
 	float: left;
 	padding: 6px 2px;
 	position: relative;
@@ -55,8 +55,8 @@ body {
 }
 
 #icons div svg {
-	width: 48px;
-	height: 48px;
+	width: 32px;
+	height: 32px;
 	fill: #000;
 }
 
