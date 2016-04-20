@@ -141,6 +141,43 @@ module.exports = function(grunt) {
 	// minify css files
 	grunt.loadNpmTasks('grunt-contrib-cssmin');
 
+	// Create PHP WordPress plugin, output to php
+	grunt.registerTask( 'svgphp', 'Output a PHP WordPress plugin for SVGs', function() {
+		var svgFiles = grunt.file.expand( { filter: 'isFile', cwd: 'svg-min/' }, [ '**/*.svg' ] ),
+			content;
+
+		// Start the plugin
+		content = grunt.file.read( 'svg-php/inc/index-header.php' );
+
+		// Create a switch() case for each svg file
+		svgFiles.forEach( function( svgFile ) {
+			// Clean up the filename to use for the react components
+			var name = svgFile.split( '.' );
+			name = name[0];
+
+			// Grab the relevant bits from the file contents
+			var fileContent = grunt.file.read( 'svg-min/' + svgFile );
+
+			// Add className, height, and width to the svg element
+			fileContent = fileContent.slice( 0, 4 ) +
+						' class="genericon ' + name + '" height="16" width="16"' +
+						fileContent.slice( 4, -6 ) +
+						fileContent.slice( -6 );
+
+			// Output the case for each icon
+			var iconComponent = "		case '" + name + "':\n" +
+								"			$svg = '" + fileContent + "';\n" +
+								"			break;\n";
+
+			content += iconComponent;
+		} );
+
+		// Finish up and write the plugin
+		content += grunt.file.read( 'svg-php/inc/index-footer.php' );
+		grunt.file.write( 'svg-php/genericons.php', content );
+
+	});
+
 	// Update all files in svg-min to add a <g> group tag
 	grunt.registerTask( 'group', 'Add <g> tag to SVGs', function() {
 		var svgFiles = grunt.file.expand( { filter: 'isFile', cwd: 'svg-min/' }, [ '**/*.svg' ] );
@@ -191,6 +228,6 @@ module.exports = function(grunt) {
 
 	// Default task(s).
 
-	grunt.registerTask('default', ['svgmin', 'group', 'svgstore', 'rename', 'webfont', 'cssmin','addsquare']);
+	grunt.registerTask('default', ['svgmin', 'group', 'svgstore', 'rename', 'webfont', 'cssmin', 'svgphp', 'addsquare']);
 
 };
