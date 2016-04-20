@@ -24,13 +24,13 @@ function get_genericon( $genericon ) {
 
 	switch ( $genericon ) {
 		case 'activity':
-			$svg = '<svg class="genericon genericon-activity" height="16" width="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><g><style>.st0{fill:#231F20;}</style><path class="st0" d="M11 14.4L8.5 7.7l-2.4 5.7L3.9 9l-1.1 1.6-1.6-1.2L4.1 5l1.8 3.6 2.6-6.3L11 8.6l2.1-5.9 1.8.6z"/></g></svg>';
+			$svg = '<svg class="genericon genericon-activity" height="16" width="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><g><path d="M11 14.4L8.5 7.7l-2.4 5.7L3.9 9l-1.1 1.6-1.6-1.2L4.1 5l1.8 3.6 2.6-6.3L11 8.6l2.1-5.9 1.8.6"/></g></svg>';
 			break;
 		case 'anchor':
-			$svg = '<svg class="genericon genericon-anchor" height="16" width="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><g><style>.st0{fill:#0F0F0F;}</style><path class="st0" d="M12 8v2.5c0 .8-.7 1.5-1.5 1.5S9 11.3 9 10.5V5.8c.7-.3 1.1-1 1.1-1.8 0-1.1-.9-2-2-2s-2 .9-2 2c0 .7.4 1.3.9 1.7v4.8c0 .8-.7 1.5-1.5 1.5S4 11.3 4 10.5V8c-1.1 0-2 .9-2 2v.5C2 12.4 3.6 14 5.5 14c1 0 1.9-.4 2.5-1.1.6.6 1.5 1.1 2.5 1.1 1.9 0 3.5-1.6 3.5-3.5V10c0-1.1-.9-2-2-2z"/></g></svg>';
+			$svg = '<svg class="genericon genericon-anchor" height="16" width="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><g><path d="M12 8v2.5c0 .8-.7 1.5-1.5 1.5S9 11.3 9 10.5V5.8c.7-.3 1.1-1 1.1-1.8 0-1.1-.9-2-2-2s-2 .9-2 2c0 .7.4 1.3.9 1.7v4.8c0 .8-.7 1.5-1.5 1.5S4 11.3 4 10.5V8c-1.1 0-2 .9-2 2v.5C2 12.4 3.6 14 5.5 14c1 0 1.9-.4 2.5-1.1.6.6 1.5 1.1 2.5 1.1 1.9 0 3.5-1.6 3.5-3.5V10c0-1.1-.9-2-2-2z"/></g></svg>';
 			break;
 		case 'aside':
-			$svg = '<svg class="genericon genericon-aside" height="16" width="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><g><path d="M12 2H4c-1.1 0-2 .9-2 2v8c0 1.1.9 2 2 2h6l4-4V4c0-1.1-.9-2-2-2zM9 7H4V6h5v1zm3-2H4V4h8v1z"/></g></svg>';
+			$svg = '<svg class="genericon genericon-aside" height="16" width="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><g><path d="M12 2H4c-1.1 0-2 .9-2 2v8c0 1.1.9 2 2 2h6l4-4V4c0-1.1-.9-2-2-2zM9 7H4V6h5v1zM4 5V4h8v1H4zm6 7.5V10h2.5L10 12.5z"/></g></svg>';
 			break;
 		case 'attachment':
 			$svg = '<svg class="genericon genericon-attachment" height="16" width="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><g><path d="M9.5 1C8.1 1 7 2.2 7 3.5v7c0 .8.7 1.5 1.5 1.5s1.5-.7 1.5-1.5V5H9v5.5c0 .3-.2.5-.5.5s-.5-.2-.5-.5v-7C8 2.7 8.7 2 9.5 2s1.5.7 1.5 1.5v8c0 1.4-1.1 2.5-2.5 2.5S6 12.9 6 11.5V5H5v6.5C5 13.4 6.6 15 8.5 15s3.5-1.6 3.5-3.5v-8C12 2.2 10.9 1 9.5 1z"/></g></svg>';
@@ -45,25 +45,25 @@ function get_genericon( $genericon ) {
 			$svg = '<svg class="genericon genericon-book" height="16" width="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><g><path d="M12 1h-1v8l-1-1-1 1V1H3v14h9c.6 0 1-.4 1-1V2c0-.6-.4-1-1-1z"/></g></svg>';
 			break;
 		case 'bug':
-			$svg = '<svg class="genericon genericon-bug" height="16" width="16" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><g><path d="M14.5 8H13c0-.485-.084-.946-.22-1.386C13.544 5.608 14 4.36 14 3v-.5c0-.276-.224-.5-.5-.5s-.5.224-.5.5V3c0 2.76-2.238 5-5 5-2.76 0-5-2.24-5-5v-.5c0-.276-.224-.5-.5-.5s-.5.224-.5.5V3c0 1.364.46 2.617 1.227 3.625C3.095 7.063 3 7.518 3 8H1.5c-.276 0-.5.224-.5.5s.224.5.5.5h1.6c.08.38.21.74.368 1.083C2.558 11.135 2 12.5 2 14v.5c0 .275.224.5.5.5s.5-.225.5-.5V14c0-1.132.386-2.166 1.02-3 .914 1.207 2.35 2 3.98 2 1.635 0 3.072-.796 3.984-2.01C12.62 11.83 13 12.87 13 14v.5c0 .275.224.5.5.5s.5-.225.5-.5V14c0-1.5-.556-2.866-1.467-3.917.158-.344.29-.702.366-1.083h1.6c.276 0 .5-.224.5-.5s-.224-.5-.5-.5zM8 7c1.633 0 3.034-.985 3.655-2.39C10.742 3.625 9.45 3 8 3c-1.448 0-2.742.625-3.655 1.61C4.965 6.015 6.368 7 8 7z"/></g></svg>';
+			$svg = '<svg class="genericon genericon-bug" height="16" width="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><g><path d="M14 7V5h-2.1c-.1-.4-.2-.7-.4-1l1.3-1.3-1.4-1.4L10 2.6C9.4 2.2 8.7 2 8 2s-1.4.2-2 .6L4.7 1.3 3.3 2.7 4.6 4c-.2.3-.4.6-.5 1H2v2h2v2H2v2h2.1c.4 1.6 1.7 2.7 3.4 3V7h1v7c1.6-.2 2.9-1.4 3.4-3H14V9h-2V7h2z"/></g></svg>';
 			break;
 		case 'cart':
-			$svg = '<svg class="genericon genericon-cart" height="16" width="16" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><g><path d="M11 12c-.553 0-1 .447-1 1s.447 1 1 1 1-.447 1-1-.447-1-1-1zm-6 0c-.552 0-1 .447-1 1s.448 1 1 1 1-.447 1-1-.448-1-1-1zm7-3l2-5H5V2H2v1h2v8h8v-1H5V9h7z"/></g></svg>';
+			$svg = '<svg class="genericon genericon-cart" height="16" width="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><g><path d="M11 12c-.6 0-1 .4-1 1s.4 1 1 1 1-.4 1-1-.4-1-1-1zm-6 0c-.6 0-1 .4-1 1s.4 1 1 1 1-.4 1-1-.4-1-1-1zm6-2H5V9h5.6c.8 0 1.5-.5 1.9-1.3L14 4H5V3c0-.6-.4-1-1-1H2v1h2v7c0 .6.4 1 1 1h7c0-.6-.4-1-1-1z"/></g></svg>';
 			break;
 		case 'category':
-			$svg = '<svg class="genericon genericon-category" height="16" width="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><g><path d="M5.5 7L5 8H4l1-2h5V5H6.5L6 4H3v8h8l2-5"/></g></svg>';
+			$svg = '<svg class="genericon genericon-category" height="16" width="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><g><path d="M13 5H8l-.7-1.4c-.2-.4-.5-.6-.9-.6H3c-.5 0-1 .5-1 1v8c0 .6.5 1 1 1h10c.6 0 1-.4 1-1V6c0-.6-.4-1-1-1z"/></g></svg>';
 			break;
 		case 'chat':
-			$svg = '<svg class="genericon genericon-chat" height="16" width="16" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><g><path d="M13 4v3c0 1.654-1.346 3-3 3H6.914l-1 1H8.5l3.5 3.5V11h1c1.104 0 2-.896 2-2V6c0-1.104-.896-2-2-2z"/><path d="M10 2H2C.896 2 0 2.896 0 4v3c0 1.104.896 2 2 2h1v3.5L6.5 9H10c1.104 0 2-.896 2-2V4c0-1.104-.896-2-2-2z"/></g></svg>';
+			$svg = '<svg class="genericon genericon-chat" height="16" width="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><g><path d="M14 4.3V8c0 1.7-1.3 3-3 3H4.8c-.3 0-.5.1-.7.3l-.3.3c.3.2.8.4 1.2.4h6.2c.5 0 1 .2 1.4.6L15 15V6c0-.7-.4-1.4-1-1.7zM11 10c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2H3c-1.1 0-2 .9-2 2v9l2.4-2.4c.4-.4.9-.6 1.4-.6H11z"/></g></svg>';
 			break;
 		case 'checkmark':
-			$svg = '<svg class="genericon genericon-checkmark" height="16" width="16" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><g><path d="M11 4.25l-3.5 4-1.75-1.5-1 1L7 11h1l4-6"/></g></svg>';
+			$svg = '<svg class="genericon genericon-checkmark" height="16" width="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><g><path d="M13.3 3.3l-6.8 6.8-2.8-2.8-1.4 1.4 4.2 4.2 8.2-8.2"/></g></svg>';
 			break;
 		case 'close-alt':
-			$svg = '<svg class="genericon genericon-close-alt" height="16" width="16" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><g><path d="M16 1l-1-1-6.5 6.5L2 0 1 1l6.5 6.5L1 14l1 1 6.5-6.5L15 15l1-1-6.5-6.5"/></g></svg>';
+			$svg = '<svg class="genericon genericon-close-alt" height="16" width="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><g><path d="M14.7 2.7l-1.4-1.4L8 6.6 2.7 1.3 1.3 2.7 6.6 8l-5.3 5.3 1.4 1.4L8 9.4l5.3 5.3 1.4-1.4L9.4 8"/></g></svg>';
 			break;
 		case 'close':
-			$svg = '<svg class="genericon genericon-close" height="16" width="16" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><g><path d="M12 5l-1-1-2.5 2.5L6 4 5 5l2.5 2.5L5 10l1 1 2.5-2.5L11 11l1-1-2.5-2.5"/></g></svg>';
+			$svg = '<svg class="genericon genericon-close" height="16" width="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><g><path d="M12.7 4.7l-1.4-1.4L8 6.6 4.7 3.3 3.3 4.7 6.6 8l-3.3 3.3 1.4 1.4L8 9.4l3.3 3.3 1.4-1.4L9.4 8"/></g></svg>';
 			break;
 		case 'cloud-download':
 			$svg = '<svg class="genericon genericon-cloud-download" height="16" width="16" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><g><path d="M9 11H7v2H5l3 3 3-3H9v-2zm4-3h-.184c.112-.314.184-.647.184-1 0-1.657-1.344-3-3-3-1.208 0-2.244.72-2.72 1.75C6.83 5.286 6.2 5 5.5 5 4.12 5 3 6.12 3 7.5c0 .17.018.338.05.5H3c-1.104 0-2 .896-2 2s.896 2 2 2h3v-2h4v2h3c1.104 0 2-.896 2-2s-.896-2-2-2z"/></g></svg>';
@@ -75,22 +75,22 @@ function get_genericon( $genericon ) {
 			$svg = '<svg class="genericon genericon-cloud" height="16" width="16" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><g><path d="M13 8h-.184c.112-.314.184-.647.184-1 0-1.657-1.344-3-3-3-1.208 0-2.244.72-2.72 1.75C6.83 5.287 6.2 5 5.5 5 4.12 5 3 6.12 3 7.5c0 .172.017.337.05.5H3c-1.104 0-2 .896-2 2s.896 2 2 2h10c1.104 0 2-.896 2-2s-.896-2-2-2z"/></g></svg>';
 			break;
 		case 'code':
-			$svg = '<svg class="genericon genericon-code" height="16" width="16" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><g><path stroke="#231F20" stroke-width="2" stroke-miterlimit="10" d="M4 5L2 8l2 3M12 5l2 3-2 3M7 12l2-8"/></g></svg>';
+			$svg = '<svg class="genericon genericon-code" height="16" width="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><g><path d="M5.3 12.7L.6 8l4.7-4.7 1.4 1.4L3.4 8l3.3 3.3M10.7 12.7l-1.4-1.4L12.6 8 9.3 4.7l1.4-1.4L15.4 8"/></g></svg>';
 			break;
 		case 'cog':
-			$svg = '<svg class="genericon genericon-cog" height="16" width="16" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><g><path d="M14.75 10.156l-1.81-1.568C12.964 8.393 13 8.2 13 8c0-.203-.036-.395-.06-.59l1.81-1.57-.45-1.087-2.387.17c-.246-.313-.525-.592-.837-.837l.17-2.386-1.087-.45-1.57 1.81C8.393 3.037 8.2 3 8 3s-.394.037-.59.06L5.84 1.25l-1.086.45.17 2.386c-.313.246-.592.526-.838.838L1.7 4.754l-.45 1.09 1.81 1.57C3.035 7.607 3 7.798 3 8c0 .203.036.396.06.592l-1.81 1.57.45 1.087 2.388-.17c.246.31.524.59.836.834l-.17 2.386 1.09.45 1.57-1.81c.194.024.385.06.586.06.203 0 .396-.036.593-.06l1.568 1.81 1.09-.45-.17-2.388c.31-.245.59-.524.834-.836l2.386.17.45-1.09zM10 8c0 1.104-.896 2-2 2s-2-.896-2-2 .896-2 2-2 2 .896 2 2z"/></g></svg>';
+			$svg = '<svg class="genericon genericon-cog" height="16" width="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><g><path d="M13 8c0-.4-.1-.8-.1-1.1l1.8-1.3-1.2-2.2-2 .9c-.5-.5-1.2-.9-1.9-1.1L9.2 1H6.8l-.3 2.2c-.7.3-1.3.6-1.9 1.1l-2-.9-1.3 2.2 1.8 1.3c0 .3-.1.7-.1 1.1 0 .4.1.8.1 1.1l-1.8 1.3 1.2 2.2 2-.9c.5.5 1.2.9 1.9 1.1l.4 2.2h2.5l.2-2.2c.7-.2 1.4-.6 1.9-1.1l2 .9 1.2-2.2-1.8-1.3c.1-.3.2-.7.2-1.1zm-5 2.5c-1.4 0-2.5-1.1-2.5-2.5S6.6 5.5 8 5.5s2.5 1.1 2.5 2.5-1.1 2.5-2.5 2.5z"/></g></svg>';
 			break;
 		case 'collapse':
 			$svg = '<svg class="genericon genericon-collapse" height="16" width="16" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><g><path d="M11 11L7.5 7.5 4 11l-1-1 4.5-4.5L12 10"/></g></svg>';
 			break;
 		case 'comment':
-			$svg = '<svg class="genericon genericon-comment" height="16" width="16" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><g><path d="M12 4H4c-1.104 0-2 .896-2 2v3c0 1.104.896 2 2 2h1v3.5L8.5 11H12c1.104 0 2-.896 2-2V6c0-1.104-.896-2-2-2z"/></g></svg>';
+			$svg = '<svg class="genericon genericon-comment" height="16" width="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><g><style>.st0{display:none;} .st1{display:inline;} .st2{fill:#231F20;}</style><path class="st2" d="M13 3H3c-1.1 0-2 .9-2 2v10l2.4-2.4c.4-.4.9-.6 1.4-.6H13c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"/></g></svg>';
 			break;
 		case 'day':
 			$svg = '<svg class="genericon genericon-day" height="16" width="16" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><g><path d="M11 3V2h-1v1H5V2H4v1H2v10h11V3h-2zm1 8c0 .553-.447 1-1 1H4c-.552 0-1-.447-1-1V6c0-.553.448-1 1-1h7c.553 0 1 .447 1 1v5zM7.5 6h-1c-.276 0-.5.224-.5.5s.224.5.5.5H7v3.5c0 .276.224.5.5.5s.5-.224.5-.5v-4c0-.276-.224-.5-.5-.5z"/></g></svg>';
 			break;
 		case 'document':
-			$svg = '<svg class="genericon genericon-document" height="16" width="16" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><g><path d="M9 3H4v10h8V6L9 3zm2 9H5V4h3v3h3v5z"/></g></svg>';
+			$svg = '<svg class="genericon genericon-document" height="16" width="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><g><path d="M9 1H4c-.5 0-1 .5-1 1v12c0 .5.5 1 1 1h8c.5 0 1-.5 1-1V5L9 1zm0 4V2.5L11.5 5H9z"/></g></svg>';
 			break;
 		case 'download':
 			$svg = '<svg class="genericon genericon-download" height="16" width="16" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><g><path d="M11 7H9V3H7v4H5l3 3 3-3zm-8 4v2h10v-2H3z"/></g></svg>';
@@ -144,7 +144,7 @@ function get_genericon( $genericon ) {
 			$svg = '<svg class="genericon genericon-info" height="16" width="16" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><g><path d="M8 2C4.686 2 2 4.687 2 8s2.686 6 6 6c3.313 0 6-2.687 6-6s-2.687-6-6-6zm0 2c.552 0 1 .448 1 1s-.448 1-1 1c-.553 0-1-.448-1-1s.447-1 1-1zm2 8H6v-1h1.25V8h-1V7h2.5v4H10v1z"/></g></svg>';
 			break;
 		case 'italic':
-			$svg = '<svg class="genericon genericon-italic" height="16" width="16" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><g><path d="M10.688 5L11 4H7.5l-.312 1h1l-1.876 6h-1L5 12h3.5l.312-1h-1l1.876-6"/></g></svg>';
+			$svg = '<svg class="genericon genericon-italic" height="16" width="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><g><path d="M11.7 4l.4-2h-6l-.4 2h2l-1.4 8h-2l-.4 2h6l.4-2h-2l1.4-8"/></g></svg>';
 			break;
 		case 'key':
 			$svg = '<svg class="genericon genericon-key" height="16" width="16" xmlns="http://<g>www.w3.org/2000/svg" width="15.998" height="15.998" viewBox="0 0 15.998 15.998"><path d="M13.418 4.78l-2.23-2.23c-.777-.78-2.04-.78-2.82 0L6.55 4.37c-.777.777-.777 2.04 0 2.82l.007.005L3 10.75v2.248h2.25L8.807 9.44c.78.755 2.022.75 2.792-.02l1.818-1.82c.78-.78.78-2.042 0-2.82zm-2.92 2.594l-2-2 1.25-1.25 2 2-1.25 1.25z"/></g></svg>';
@@ -165,10 +165,10 @@ function get_genericon( $genericon ) {
 			$svg = '<svg class="genericon genericon-menu" height="16" width="16" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><g><path d="M0 14h16v-2H0v2zM0 2v2h16V2H0zm0 7h16V7H0v2z"/></g></svg>';
 			break;
 		case 'microphone':
-			$svg = '<svg class="genericon genericon-microphone" height="16" width="16" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><g><path d="M8 9c.83 0 1.5-.672 1.5-1.5v-4C9.5 2.673 8.83 2 8 2c-.827 0-1.5.673-1.5 1.5v4C6.5 8.328 7.173 9 8 9zm2.95-1c-.24 1.418-1.464 2.5-2.95 2.5-1.484 0-2.71-1.082-2.95-2.5h-1.5c.215 1.91 1.615 3.453 3.45 3.875V14h2v-2.125c1.836-.422 3.235-1.965 3.45-3.875h-1.5z"/></g></svg>';
+			$svg = '<svg class="genericon genericon-microphone" height="16" width="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><g><path d="M8 10c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2s-2 .9-2 2v4c0 1.1.9 2 2 2zm3-2c0 1.7-1.3 3-3 3S5 9.7 5 8H3c0 2.4 1.7 4.4 4 4.9V15h2v-2.1c2.3-.5 4-2.5 4-4.9h-2z"/></g></svg>';
 			break;
 		case 'minus':
-			$svg = '<svg class="genericon genericon-minus" height="16" width="16" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><g><path d="M3 7h10v2H3z"/></g></svg>';
+			$svg = '<svg class="genericon genericon-minus" height="16" width="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><g><path d="M3 7h10v2H3z"/></g></svg>';
 			break;
 		case 'month':
 			$svg = '<svg class="genericon genericon-month" height="16" width="16" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><g><path d="M6 11h1v-1H6v1zm0-2h1V8H6v1zm0-2h1V6H6v1zm-2 4h1v-1H4v1zm0-2h1V8H4v1zm6 0h1V8h-1v1zM8 7h1V6H8v1zm2 0h1V6h-1v1zm1-4V2h-1v1H5V2H4v1H2v10h11V3h-2zm1 8c0 .553-.447 1-1 1H4c-.552 0-1-.447-1-1V6c0-.553.448-1 1-1h7c.553 0 1 .447 1 1v5zM8 9h1V8H8v1zm0 2h1v-1H8v1z"/></g></svg>';
@@ -189,7 +189,7 @@ function get_genericon( $genericon ) {
 			$svg = '<svg class="genericon genericon-pause" height="16" width="16" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><g><path d="M4 13h3V3H4v10zM9 3v10h3V3H9z"/></g></svg>';
 			break;
 		case 'phone':
-			$svg = '<svg class="genericon genericon-phone" height="16" width="16" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><g><path d="M10 2H6c-1.104 0-2 .896-2 2v8c0 1.104.896 2 2 2h4c1.104 0 2-.896 2-2V4c0-1.104-.896-2-2-2zM8 13c-.552 0-1-.447-1-1s.448-1 1-1c.553 0 1 .447 1 1s-.447 1-1 1zm3-3H5V4h6v6z"/></g></svg>';
+			$svg = '<svg class="genericon genericon-phone" height="16" width="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><g><path d="M10 1H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h4c1.1 0 2-.9 2-2V3c0-1.1-.9-2-2-2zM8.5 14h-1c-.3 0-.5-.2-.5-.5s.2-.5.5-.5h1c.3 0 .5.2.5.5s-.2.5-.5.5zm2.5-2H5V3h6v9z"/></g></svg>';
 			break;
 		case 'picture':
 			$svg = '<svg class="genericon genericon-picture" height="16" width="16" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><g><path d="M3 3v10h10V3H3zm3 2c.552 0 1 .448 1 1s-.448 1-1 1-1-.448-1-1 .448-1 1-1zm6 7H4l2-3 1.5 2.25L11 6l1 1.5V12z"/></g></svg>';
@@ -201,10 +201,10 @@ function get_genericon( $genericon ) {
 			$svg = '<svg class="genericon genericon-play" height="16" width="16" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><g><path d="M4 3v10l8-5"/></g></svg>';
 			break;
 		case 'plugin':
-			$svg = '<svg class="genericon genericon-plugin" height="16" width="16" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><g><path d="M7 3c0-.553-.448-1-1-1s-1 .447-1 1v3h2V3zm4 0c0-.553-.447-1-1-1s-1 .447-1 1v3h2V3zM3 7c0 2.42 1.718 4.436 4 4.9V14h2v-2.1c2.282-.465 4-2.48 4-4.9H3z"/></g></svg>';
+			$svg = '<svg class="genericon genericon-plugin" height="16" width="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><g><path d="M7 3c0-.6-.4-1-1-1s-1 .4-1 1v3h2V3zm4 0c0-.6-.4-1-1-1s-1 .4-1 1v3h2V3zM4 6.5V10c0 1.1.9 2 2 2h1v3h2v-3h1c1.1 0 2-.9 2-2V6.5H4z"/></g></svg>';
 			break;
 		case 'plus':
-			$svg = '<svg class="genericon genericon-plus" height="16" width="16" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><g><path d="M13 7H9V3H7v4H3v2h4v4h2V9h4"/></g></svg>';
+			$svg = '<svg class="genericon genericon-plus" height="16" width="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><g><path d="M13 7H9V3H7v4H3v2h4v4h2V9h4"/></g></svg>';
 			break;
 		case 'previous':
 			$svg = '<svg class="genericon genericon-previous" height="16" width="16" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><g><path d="M8 4.646l.677.677L6 8h7v1H6l2.677 2.677-.677.677L4.146 8.5"/></g></svg>';
@@ -225,13 +225,13 @@ function get_genericon( $genericon ) {
 			$svg = '<svg class="genericon genericon-rewind" height="16" width="16" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><g><path d="M15 3L9 6.75V3L1 8l8 5V9.25L15 13"/></g></svg>';
 			break;
 		case 'search':
-			$svg = '<svg class="genericon genericon-search" height="16" width="16" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><g><path d="M14 13l-3.866-3.866c.54-.74.866-1.647.866-2.634C11 4.015 8.985 2 6.5 2S2 4.015 2 6.5 4.015 11 6.5 11c.987 0 1.893-.327 2.634-.866L13 14l1-1zM3 6.5C3 4.567 4.567 3 6.5 3 8.434 3 10 4.567 10 6.5S8.434 10 6.5 10C4.567 10 3 8.433 3 6.5z"/></g></svg>';
+			$svg = '<svg class="genericon genericon-search" height="16" width="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><g><path d="M14.7 13.3l-4.5-4.5C10.7 8 11 7 11 6c0-2.8-2.2-5-5-5S1 3.2 1 6s2.2 5 5 5c1 0 2-.3 2.8-.8l4.5 4.5 1.4-1.4zM6 9C4.3 9 3 7.7 3 6s1.3-3 3-3 3 1.3 3 3-1.3 3-3 3z"/></g></svg>';
 			break;
 		case 'send-to-phone':
-			$svg = '<svg class="genericon genericon-send-to-phone" height="16" width="16" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><g><path d="M10 2H6c-1.104 0-2 .896-2 2v1h1V4h6v6H5V9H4v3c0 1.104.896 2 2 2h4c1.104 0 2-.896 2-2V4c0-1.104-.896-2-2-2zM8 13c-.552 0-1-.447-1-1s.448-1 1-1c.553 0 1 .447 1 1s-.447 1-1 1zM6 9l3-2-3-2v1H2v2h4v1z"/></g></svg>';
+			$svg = '<svg class="genericon genericon-send-to-phone" height="16" width="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><g><path d="M6 10l3-3-3-3v2H2v2h4v2zm4-9H6c-1.1 0-2 .9-2 2v2h1V3h6v9H5V9H4v4c0 1.1.9 2 2 2h4c1.1 0 2-.9 2-2V3c0-1.1-.9-2-2-2zM8.5 14h-1c-.3 0-.5-.2-.5-.5s.2-.5.5-.5h1c.3 0 .5.2.5.5s-.2.5-.5.5z"/></g></svg>';
 			break;
 		case 'send-to-tablet':
-			$svg = '<svg class="genericon genericon-send-to-tablet" height="16" width="16" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><g><path d="M5 9l3-2-3-2v1H1v2h4v1zm7-9H4C2.896 0 2 .896 2 2v3h2V2h8v10H4V9H2v5c0 1.104.896 2 2 2h8c1.104 0 2-.896 2-2V2c0-1.104-.896-2-2-2zM8 15c-.552 0-1-.447-1-1s.448-1 1-1c.553 0 1 .447 1 1s-.447 1-1 1z"/></g></svg>';
+			$svg = '<svg class="genericon genericon-send-to-tablet" height="16" width="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><g><path d="M4 10l3-3-3-3v2H0v2h4v2z"/><path d="M12 0H4C2.9 0 2 .9 2 2v3h1V2h10v11H3V9H2v5c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2zM8.5 15h-1c-.3 0-.5-.2-.5-.5s.2-.5.5-.5h1c.3 0 .5.2.5.5s-.2.5-.5.5z"/></g></svg>';
 			break;
 		case 'share':
 			$svg = '<svg class="genericon genericon-share" height="16" width="16" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><g><path d="M11 8c0 1.657-1.343 3-3 3-.828 0-1.563-.35-2.105-.895-.39-.392-1.023-.39-1.414 0s-.39 1.023 0 1.414l-.004.004C5.38 12.43 6.62 13 8 13c2.05 0 3.806-1.235 4.578-3H15V8h-4zM8 5c.83 0 1.563.35 2.105.895l.005-.005c.39.39 1.023.39 1.414 0s.39-1.023 0-1.414C10.62 3.57 9.382 3 8 3 5.95 3 4.194 4.235 3.422 6H1v2h4c0-1.657 1.343-3 3-3zM6.5 8c0 .83.672 1.5 1.5 1.5.83 0 1.5-.67 1.5-1.5S8.83 6.5 8 6.5c-.828 0-1.5.67-1.5 1.5z"/></g></svg>';
@@ -282,7 +282,7 @@ function get_genericon( $genericon ) {
 			$svg = '<svg class="genericon genericon-summary" height="16" width="16" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><g><path d="M5.5 8c-.276 0-.5.224-.5.5s.224.5.5.5.5-.224.5-.5-.224-.5-.5-.5zm0-2c-.276 0-.5.224-.5.5s.224.5.5.5.5-.224.5-.5-.224-.5-.5-.5zm0 4c-.276 0-.5.224-.5.5s.224.5.5.5.5-.224.5-.5-.224-.5-.5-.5zM7 9h3V8H7v1zm0 2h3v-1H7v1zm3-8c0-.553-.447-1-1-1H6c-.552 0-1 .447-1 1H3v10h9V3h-2zM6.5 3h2c.276 0 .5.224.5.5s-.224.5-.5.5h-2c-.276 0-.5-.224-.5-.5s.224-.5.5-.5zm4.5 9H4V4h1v1h5V4h1v8zM7 7h3V6H7v1z"/></g></svg>';
 			break;
 		case 'tablet':
-			$svg = '<svg class="genericon genericon-tablet" height="16" width="16" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><g><path d="M12 0H4C2.896 0 2 .896 2 2v12c0 1.104.896 2 2 2h8c1.104 0 2-.896 2-2V2c0-1.104-.896-2-2-2zM8 15c-.552 0-1-.447-1-1s.448-1 1-1c.553 0 1 .447 1 1s-.447 1-1 1zm4-3H4V2h8v10z"/></g></svg>';
+			$svg = '<svg class="genericon genericon-tablet" height="16" width="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><g><path d="M12 0H4C2.9 0 2 .9 2 2v12c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2zM8.5 15h-1c-.3 0-.5-.2-.5-.5s.2-.5.5-.5h1c.3 0 .5.2.5.5s-.2.5-.5.5zm4.5-2H3V2h10v11z"/></g></svg>';
 			break;
 		case 'tag':
 			$svg = '<svg class="genericon genericon-tag" height="16" width="16" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><g><path d="M8 4l-6 6 4 4 6-6V4H8zm2 3c-.553 0-1-.447-1-1s.447-1 1-1 1 .447 1 1-.447 1-1 1z"/></g></svg>';

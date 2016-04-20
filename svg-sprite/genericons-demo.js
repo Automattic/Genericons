@@ -19,9 +19,9 @@
     }
     function suggestCode( attr, cssClass ) {
 
-		var fileLocation = '//s1.wp.com/i/gridicons.svg',	// @todo: needs to be updated with final location	    
-            suggestion = '<svg class="gridicon '+ cssClass +'" width="24px" height="24px"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="' + fileLocation + attr + '"></use></svg>';
+		var fileLocation = 'genericons.svg',
+            suggestion = '<svg class="genericon genericon-'+ cssClass +'" width="24px" height="24px"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="' + fileLocation + attr + '"></use></svg>';
          
-        window.prompt( "Copy this, paste in your HTML.\n\nRemember to update the gridicons.svg file as well!", suggestion );
+        window.prompt( "Copy this, paste in your HTML.\n\nRemember to update the genericons.svg file as well!", suggestion );
     }
 })( jQuery );
