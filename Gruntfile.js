@@ -63,7 +63,7 @@ module.exports = function(grunt) {
 					<div id="icons">
 					{{#each icons}}
 						<div>
-							<svg width="16" height="16" class="genericon {{name}}">
+							<svg width="16" height="16" class="genericon genericon-{{name}}">
 							<use xlink:href="#{{name}}" />
 							</svg>
 							<p>{{title}}</p>
@@ -160,7 +160,7 @@ module.exports = function(grunt) {
 
 			// Add className, height, and width to the svg element
 			fileContent = fileContent.slice( 0, 4 ) +
-						' class="genericon ' + name + '" height="16" width="16"' +
+						' class="genericon genericon-' + name + '" height="16" width="16"' +
 						fileContent.slice( 4, -6 ) +
 						fileContent.slice( -6 );
 
