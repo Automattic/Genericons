@@ -172,9 +172,9 @@ module.exports = function(grunt) {
 			content += iconComponent;
 		} );
 
-		// Finish up and write the plugin
+		// Finish up and write the SVG fallback plugin
 		content += grunt.file.read( 'svg-php/inc/index-footer.php' );
-		grunt.file.write( 'svg-php/genericons.php', content );
+		grunt.file.write( 'svg-php/genericons-nosprite.php', content );
 
 	});
 
