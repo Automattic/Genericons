@@ -52,8 +52,9 @@ function get_genericon( $name, $id = null, $external = true, $title = null ) {
  * Echo out our Genericon with a super-simple function.
  * Usage: genericon( 'name-of-icon' );
  */
-function genericon( $name, $id = null ) {
-	echo genericon( $name, $id );
+ function genericon( $name, $id = null, $external = true, $title = null ) {
+ 	global $genericons_inject_sprite;
+	echo get_genericon( $name, $id, $external, $title );
 }
 
 /*
