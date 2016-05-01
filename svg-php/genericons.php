@@ -40,6 +40,21 @@ function genericon( $name, $id = null ) {
 }
 
 /*
+ * Implement svg4everybody in order to better support external sprite references
+ * on IE8-10. For lower versions, we need an older copy of the script.
+ * https://github.com/jonathantneal/svg4everybody
+ */
+function genericon_scripts() {
+	/*
+	 * Implement svg4everybody in order to better support external sprite references
+	 * on IE8-10. For lower versions, we need an older copy of the script.
+	 * https://github.com/jonathantneal/svg4everybody
+	 */
+	wp_enqueue_script( 'easy_as_svg-svg4everybody', get_template_directory_uri() . '/genericons/svg-php/svg4everybody.js', array(), '20160401', false );
+}
+add_action( 'wp_enqueue_scripts', 'genericon_scripts' );
+
+/*
  * Inject our SVG sprite at the bottom of the page.
  *
  * There is a possibility that this will cause issues with
@@ -50,11 +65,13 @@ function genericon( $name, $id = null ) {
  * This function currently is only used when the user has specified to use the internal
  * method of insertion, by passing the $external parameter to get_genericon above.
  */
-function genericons_inject_sprite() {
+function genericons_footer_injection() {
 	global $genericons_inject_sprite;
 
 	if ( $genericons_inject_sprite ) :
 		include_once( get_template_directory() .'/genericons/svg-sprite/genericons.svg' );
 	endif;
+
+	echo '<script>svg4everybody();</script>';
 }
-add_filter( 'wp_footer' , 'genericons_inject_sprite' );
+add_filter( 'wp_footer' , 'genericons_footer_injection' );
