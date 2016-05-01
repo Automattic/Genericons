@@ -2,16 +2,39 @@
 
 Genericons are generic looking icons, suitable for a blog or simple website.
 
-Genericons 4.0 is **not fully backwards compatible**, so you can't just drop-in replace this new version. For example, there are no social logos this set anymore, if you need that, please consider <a href="https://github.com/Automattic/social-logos">Social Logos</a>. If you need the old version of Genericons, <a href="genericons-classic.zip">that's available too</a>. 
+Genericons 4.0 is **not fully backwards compatible**, so you can't just drop-in replace this new version. For example, there are no social logos this set anymore, if you need that, please consider <a href="https://github.com/Automattic/social-logos">Social Logos</a>. If you need the old version of Genericons, <a href="genericons-classic.zip">that's available too</a>.
 
 ## Usage
 
 The Genericons icon set comes in three versions:
 
 - Minimized SVG files in the `svg-min` directory
-- An SVG sprite (not compatible with IE) in the `svg-sprite` directory
+- An SVG sprite (compatible with IE9 and up) in the `svg-sprite` directory
 - An icon font (<a href="https://code.google.com/p/chromium/issues/detail?id=426333">shows up blurry in Chrome</a>) in the `icon-font` directory
 
+### Using SVG
+
+First, include the PHP file in your `functions.php` or elsewhere in your theme/plugin:
+
+`require get_template_directory() . '/genericons/svg-php/genericons.php';`
+
+Then, use a PHP function to display the icon where you'd like to use it:
+
+`<?php genericon( 'menu' ); ?>`
+
+If you want the Genericon returned, rather than output, use `get_genericon()` instead:
+
+`<?php get_genericon( 'menu' ); ?>`
+
+If you need to assign an ID to a specific Genericon, you can do that by passing the ID as a parameter:
+
+`<?php get_genericon( 'menu', 'menu-button' ); ?>`
+
+The script uses [HTML-inline SVG sprites](https://24ways.org/2014/an-overview-of-svg-sprite-creation-techniques/). By default, it references an external SVG sprite in order to leverage browser caching. If you'd prefer to inject the sprite inline for whatever reason, pass `false` as the third parameter of the function:
+
+`<?php genericon( 'menu', '', false ); ?>`
+
+[svg4everybody](https://github.com/jonathantneal/svg4everybody) is bundled in order to provide full IE support, from IE9 and up.
 
 ## Building your own Genericons
 
