@@ -36,6 +36,10 @@ The script uses [HTML-inline SVG sprites](https://24ways.org/2014/an-overview-of
 
 [svg4everybody](https://github.com/jonathantneal/svg4everybody) is bundled in order to provide full IE support, from IE9 and up.
 
+The final parameter allows you to manually define the title used for screen readers. Set it to 'none' if the icon is purely presentational, otherwise pass a value for a more specific title.
+
+`<?php genericon( 'twitter', '', true, 'Follow me on Twitter' ); ?>``
+
 ## Building your own Genericons
 
 Genericons are built semi-automatically. SVG source files in the `svg` directory are processed and converted into minimized SVGs, a sprite, and an icon font using `grunt`. To build your own version of Genericons, follow these instructions:

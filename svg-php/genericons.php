@@ -6,14 +6,31 @@ $genericons_inject_sprite = null;
  * This allows us to get the SVG code and return as a variable
  * Usage: get_genericon( 'name-of-icon' );
  */
-function get_genericon( $name, $id = null, $external=true ) {
+function get_genericon( $name, $id = null, $external = true, $title = null ) {
 	global $genericons_inject_sprite;
 
+	// Generate an attribute string for the SVG.
 	$attr = 'class="genericon genericon-' . $name . '"';
+
+	// If the user has passed a unique ID, output it.
 	if ( $id ) :
-		$attr .= 'id="' . $id . '"';
+		$attr .= ' id="' . $id . '"';
 	endif;
-	$return = '<svg '. $attr.'>';
+
+	if ( ! $title ) : // Use the icon name as the title if the user hasn't set one.
+		$title = $name;
+	endif;
+
+	if ( 'none' === $title ) : // Specify the icon is presentational.
+		$attr .= ' role="presentation"';
+
+	else : // Output a title and role for screen readers.
+		$attr .= ' title="' . $title . '"';
+		$attr .= ' role="img" aria-labelledby="title"';
+	endif;
+
+	// Print the SVG tag.
+	$return = '<svg ' . $attr . '>';
 
 	if ( $external ) : // Default behavior; caches better.
 		if ( function_exists( 'wpcom_is_vip' ) ) :
@@ -44,15 +61,15 @@ function genericon( $name, $id = null ) {
  * on IE8-10. For lower versions, we need an older copy of the script.
  * https://github.com/jonathantneal/svg4everybody
  */
-function genericon_scripts() {
+function genericons_scripts() {
 	/*
 	 * Implement svg4everybody in order to better support external sprite references
 	 * on IE8-10. For lower versions, we need an older copy of the script.
 	 * https://github.com/jonathantneal/svg4everybody
 	 */
-	wp_enqueue_script( 'easy_as_svg-svg4everybody', get_template_directory_uri() . '/genericons/svg-php/svg4everybody.js', array(), '20160401', false );
+	wp_enqueue_script( 'genericons-svg4everybody', get_template_directory_uri() . '/genericons/svg-php/svg4everybody.js', array(), '20160401', false );
 }
-add_action( 'wp_enqueue_scripts', 'genericon_scripts' );
+add_action( 'wp_enqueue_scripts', 'genericons_scripts' );
 
 /*
  * Inject our SVG sprite at the bottom of the page.
