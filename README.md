@@ -26,7 +26,7 @@ You can also use the bundled example.css if you'd rather insert the icons using 
 
 ## Building your own Genericons
 
-In the `source` directory, you'll find all Genericons source icons in SVG format. This will allow you to bake your own flavor of Genericons using a tool such as FontCustom (http://fontcustom.com) or Fontello (http://fontello.com). Perhaps you need more logos than are available in the base Genericons package? Just add those logos and bake your own expanded set. Maybe you need just a few of the icons Genericons provides, but would like to trim the fat? Remove the ones you won't need!
+In the `source` directory, you'll find all Genericons source icons in SVG format. This will allow you to bake your own flavor of Genericons using a tool such as FontCustom (http://fontcustom.github.io/fontcustom) or Fontello (http://fontello.com). Perhaps you need more logos than are available in the base Genericons package? Just add those logos and bake your own expanded set. Maybe you need just a few of the icons Genericons provides, but would like to trim the fat? Remove the ones you won't need!
 
 
 ### FontCustom instructions
@@ -35,7 +35,7 @@ FontCustom is a powerful commandline tool which which bakes icon fonts from the 
 
 It's not that hard to use, and once it's installed you'll never think of icon-fonts the same way again. Seriously, you should try it. Icon fonts for everyone!
 
-1. Install FontCustom. Follow the instructions on the website: http://fontcustom.com/
+1. Install FontCustom. Follow the instructions on the website: http://fontcustom.github.io/fontcustom/
 2. In the `source` directory from the Genericons download, open the file called `fontcustom.yml` in a text editor. Customize the `font_name` and `css_selector`.
 3. Open a terminal. Browse to the `source` directory. Type `fontcustom compile`.
 
