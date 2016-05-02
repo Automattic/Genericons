@@ -1,7 +1,7 @@
 {
   "checksum": {
-    "previous": "986d978ab7f0535e91edecc9a7efeed00765e9568cdb08edc1ed0cc7edca7ccb",
-    "current": "986d978ab7f0535e91edecc9a7efeed00765e9568cdb08edc1ed0cc7edca7ccb"
+    "previous": "9386ca5e9efeaf809ac0c6c1ddecb223737ef2bc58b926101781c5b86e3973a5",
+    "current": "9386ca5e9efeaf809ac0c6c1ddecb223737ef2bc58b926101781c5b86e3973a5"
   },
   "fonts": [
     "fontcustom-webfont//Genericons.ttf",
@@ -514,6 +514,14 @@
       "codepoint": 62210,
       "source": "svg/tag.svg"
     },
+    "telegram": {
+      "codepoint": 62744,
+      "source": "svg/telegram.svg"
+    },
+    "telegram-alt": {
+      "codepoint": 62745,
+      "source": "svg/telegram-alt.svg"
+    },
     "time": {
       "codepoint": 62211,
       "source": "svg/time.svg"
@@ -604,7 +612,7 @@
     "base64": true,
     "config": "fontcustom.yml",
     "css_selector": ".genericon-{{glyph}}",
-    "debug": false,
+    "debug": true,
     "font_ascent": 2048,
     "font_descent": 0,
     "font_design_size": 16,
@@ -624,10 +632,12 @@
     "preprocessor_path": "",
     "quiet": false,
     "templates": [
-      "genericons.css"
+      "genericons.css",
+      "preview"
     ]
   },
   "templates": [
-    "fontcustom-webfont/genericons.css"
+    "fontcustom-webfont/genericons.css",
+    "fontcustom-webfont/Genericons-preview.html"
   ]
 }
