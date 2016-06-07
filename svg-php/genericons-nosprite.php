@@ -282,7 +282,7 @@ function get_genericon( $genericon ) {
 			$svg = '<svg class="genericon genericon-subscribed" height="16" width="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><g><path d="M12 8V5c0-1.1-.9-2-2-2H2C.9 3 0 3.9 0 5v5c0 1.1.9 2 2 2h6v-2c0-1.2.8-2 2-2h2zM6 9.1L1 6.2V5l5 2.9L11 5v1.2L6 9.1zm9-.1h-5c-.6 0-1 .4-1 1v5c0 .6.4 1 1 1h5c.6 0 1-.4 1-1v-5c0-.6-.4-1-1-1zm-3 6l-2.1-2.1.7-.7 1.4 1.4 2.8-2.8.7.7L12 15z"/></g></svg>';
 			break;
 		case 'summary':
-			$svg = '<svg class="genericon genericon-summary" height="16" width="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><g><path d="M12 3h-1.5L10 2H6l-.5 1H4c-.5 0-1 .5-1 1v8c0 .5.5 1 1 1h8c.5 0 1-.5 1-1V4c0-.5-.5-1-1-1zm-1 8H5V5h6v6zm-1-3H7.5v1H10V8zm0-2H7.5v1H10V6zM6.5 7c.3 0 .5-.2.5-.5S6.8 6 6.5 6s-.5.2-.5.5.2.5.5.5zm0 2c.3 0 .5-.2.5-.5S6.8 8 6.5 8s-.5.2-.5.5.2.5.5.5z"/></g></svg>';
+			$svg = '<svg class="genericon genericon-summary" height="16" width="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><g><path d="M12 3h-2c0-1.1-.9-2-2-2s-2 .9-2 2H4c-.6 0-1 .4-1 1v8c0 .5.4 1 1 1h8c.5 0 1-.4 1-1V4c0-.6-.4-1-1-1zm-4-.8c.4 0 .8.3.8.8s-.4.8-.8.8-.8-.4-.8-.8.4-.8.8-.8zM9 10H5V9h4v1zm2-2H5V7h6v1zm0-2H5V5h6v1z"/></g></svg>';
 			break;
 		case 'tablet':
 			$svg = '<svg class="genericon genericon-tablet" height="16" width="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><g><path d="M12 0H4C2.9 0 2 .9 2 2v12c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2zM8.5 15h-1c-.3 0-.5-.2-.5-.5s.2-.5.5-.5h1c.3 0 .5.2.5.5s-.2.5-.5.5zm4.5-2H3V2h10v11z"/></g></svg>';
