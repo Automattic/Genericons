@@ -5,7 +5,7 @@
 html {
 	background: #fff;
 	font: 10pt/1 sans-serif;
-	color: #000;
+	color: #333;
 }
 
 a:link, a:visited {
@@ -13,7 +13,7 @@ a:link, a:visited {
 }
 
 a:active {
-	color: #1fc1ad;
+	color: #000000;
 }
 
 h1 {
@@ -36,31 +36,40 @@ body {
 }
 
 #icons div {
-	width: 32px;
-	height: 48px;
+	width: 80px;
+	height: 80px;
 	float: left;
-	padding: 6px 2px;
 	position: relative;
 	font-size: 7pt;
 	cursor: pointer;
+	text-align: center;
+	border-radius: 4px;
 }
 
 #icons div p {
 	margin: 0;
-	color: #bbb;
-	text-align: center;
+	color: #ccc;
 	overflow: hidden;
 	max-height: 1.9em;
 	word-break: break-word;
 }
 
 #icons div svg {
+	margin: 10px 0 5px 0;
 	width: 32px;
 	height: 32px;
-	fill: #000;
+	fill: #333;
+}
+
+#icons div:hover {
+	background: #ededed;
 }
 
 #icons div:hover svg {
-	fill: #1fc1ad;
+	fill: #000;
+}
+
+#icons div:hover p {
+	color: #555;
 }
 
