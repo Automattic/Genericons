@@ -12,7 +12,7 @@ The Genericons icon set comes in three versions:
 - An SVG sprite (compatible with IE9 and up) in the `svg-sprite` directory
 - An icon font (<a href="https://code.google.com/p/chromium/issues/detail?id=426333">shows up blurry in Chrome</a>) in the `icon-font` directory
 
-### Using SVG
+### Using SVG in WordPress themes
 
 First, include the PHP file in your `functions.php` or elsewhere in your theme/plugin:
 
