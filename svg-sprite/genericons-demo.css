@@ -1,0 +1,75 @@
+/**
+ * Gridicons Demo page CSS
+ */
+
+html {
+	background: #fff;
+	font: 10pt/1 sans-serif;
+	color: #333;
+}
+
+a:link, a:visited {
+	color: #999;
+}
+
+a:active {
+	color: #000000;
+}
+
+h1 {
+	text-align: center;
+	font-size: 24pt;
+}
+
+body > p {
+	text-align: center;
+	margin-bottom: 2em;
+}
+
+body {
+	max-width: 900px;
+	margin: 100px auto;
+}
+
+#icons {
+	padding: 0 20px;
+}
+
+#icons div {
+	width: 80px;
+	height: 80px;
+	float: left;
+	position: relative;
+	font-size: 7pt;
+	cursor: pointer;
+	text-align: center;
+	border-radius: 4px;
+}
+
+#icons div p {
+	margin: 0;
+	color: #ccc;
+	overflow: hidden;
+	max-height: 1.9em;
+	word-break: break-word;
+}
+
+#icons div svg {
+	margin: 10px 0 5px 0;
+	width: 32px;
+	height: 32px;
+	fill: #333;
+}
+
+#icons div:hover {
+	background: #ededed;
+}
+
+#icons div:hover svg {
+	fill: #000;
+}
+
+#icons div:hover p {
+	color: #555;
+}
+
