@@ -26,7 +26,7 @@ You can also use the bundled example.css if you'd rather insert the icons using 
 
 ## Building your own Genericons
 
-In the `source` directory, you'll find all Genericons source icons in SVG format. This will allow you to bake your own flavor of Genericons using a tool such as FontCustom (http://fontcustom.github.io/fontcustom) or Fontello (http://fontello.com). Perhaps you need more logos than are available in the base Genericons package? Just add those logos and bake your own expanded set. Maybe you need just a few of the icons Genericons provides, but would like to trim the fat? Remove the ones you won't need!
+In the `source` directory, you'll find all Genericons source icons in SVG format. This will allow you to bake your own flavor of Genericons using a tool such as FontCustom (https://github.com/FontCustom/fontcustom) or Fontello (http://fontello.com). Perhaps you need more logos than are available in the base Genericons package? Just add those logos and bake your own expanded set. Maybe you need just a few of the icons Genericons provides, but would like to trim the fat? Remove the ones you won't need!
 
 
 ### FontCustom instructions
