@@ -2,8 +2,7 @@
 
 Genericons are vector icons embedded in a webfont designed to be clean and simple keeping with a generic aesthetic.
 
-Use genericons for instant HiDPI, to change icon colors on the fly, or even with CSS effects such as drop-shadows or gradients!
-
+**But wait!** There is a newer, more modern-looking version of Genericons available, [Genericons Neue](https://github.com/Automattic/genericons-neue), which you should consider using instead.
 
 ## Usage
 
