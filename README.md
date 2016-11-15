@@ -18,9 +18,7 @@ To use it, place the `genericons` folder in your stylesheet directory and enqueu
 }
 ```
 
-This will output a comment icon before every element with the class "my-icon". The `content: '\f101';` part of this CSS is easily copied from the helper tool at http://genericons.com/, or `example.html` in the `font` directory.
-
-You can also use the bundled example.css if you'd rather insert the icons using HTML tags.
+This will output a comment icon before every element with the class "my-icon". You can also use the bundled example.css if you'd rather insert the icons using HTML tags.
 
 
 ## Building your own Genericons
@@ -34,7 +32,7 @@ FontCustom is a powerful commandline tool which which bakes icon fonts from the 
 
 It's not that hard to use, and once it's installed you'll never think of icon-fonts the same way again. Seriously, you should try it. Icon fonts for everyone!
 
-1. Install FontCustom. Follow the instructions on the website: http://fontcustom.github.io/fontcustom/
+1. Install FontCustom. Follow the instructions on the website: https://github.com/FontCustom/fontcustom
 2. In the `source` directory from the Genericons download, open the file called `fontcustom.yml` in a text editor. Customize the `font_name` and `css_selector`.
 3. Open a terminal. Browse to the `source` directory. Type `fontcustom compile`.
 
