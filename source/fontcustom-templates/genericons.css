@@ -23,7 +23,7 @@
 	-moz-transition: color .1s ease-in 0;
 	-webkit-transition: color .1s ease-in 0;
 	display: inline-block;
-	font-family: "<%= font_name %>";
+	font-family: "<%= font_name %>", serif;
 	font-style: normal;
 	font-weight: normal;
 	font-variant: normal;
